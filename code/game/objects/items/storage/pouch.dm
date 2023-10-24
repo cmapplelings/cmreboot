@@ -792,6 +792,7 @@
 
 /obj/item/storage/pouch/medkit
 	name = "medical kit pouch"
+	max_w_class = SIZE_MEDIUM
 	storage_flags = STORAGE_FLAGS_POUCH|STORAGE_USING_DRAWING_METHOD
 	icon_state = "medkit"
 	desc = "It's specifically made to hold a medkit."
