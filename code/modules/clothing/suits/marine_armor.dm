@@ -101,7 +101,7 @@
 	equip_sounds = list('sound/handling/putting_on_armor1.ogg')
 	var/armor_variation = 0
 	/// The dmi where the grayscale squad overlays are contained
-	//var/squad_overlay_icon = 'icons/mob/humans/onmob/suit_1.dmi'
+	var/squad_overlay_icon = 'icons/mob/humans/onmob/suit_1.dmi'
 
 	var/atom/movable/marine_light/light_holder
 
