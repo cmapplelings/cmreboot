@@ -114,9 +114,11 @@ var/global/list/gear_datums_by_name = list()
 	display_name = "Face wrap, tan"
 	path = /obj/item/clothing/mask/rebreather/scarf/tacticalmask/tan
 
+/*
 /datum/gear/mask/face_wrap_squad
 	display_name = "Face wrap, squad specific"
 	path =/obj/item/clothing/mask/rebreather/scarf/tacticalmask/squad
+*/
 
 /datum/gear/mask/gas
 	display_name = "Gas mask"
@@ -197,6 +199,7 @@ var/global/list/gear_datums_by_name = list()
 	display_name = "USCM beanie, tan"
 	path = /obj/item/clothing/head/beanie/tan
 
+/*
 /datum/gear/headwear/uscm/beret_squad
 	display_name = "USCM beret, squad specific"
 	path = /obj/item/clothing/head/beret/cm/squadberet
@@ -216,6 +219,7 @@ var/global/list/gear_datums_by_name = list()
 /datum/gear/headwear/uscm/beret_white
 	display_name = "USCM beret, white"
 	path = /obj/item/clothing/head/beret/cm/white
+*/
 
 /datum/gear/headwear/uscm/boonie_olive
 	display_name = "USCM boonie hat, olive"
@@ -249,9 +253,11 @@ var/global/list/gear_datums_by_name = list()
 	display_name = "USCM headband, tan"
 	path = /obj/item/clothing/head/headband/tan
 
+/*
 /datum/gear/headwear/uscm/headband_squad
 	display_name = "USCM headband, squad specific"
 	path = /obj/item/clothing/head/headband/squad
+*/
 
 /datum/gear/headwear/uscm/headset
 	display_name = "USCM headset"
