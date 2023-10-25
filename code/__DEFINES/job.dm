@@ -168,6 +168,31 @@ var/global/list/job_command_roles = JOB_COMMAND_ROLES_LIST
 
 //------------------------------------
 
+//--------LOWPOP------//
+//Command Roles
+#define JOB_LP_CO 	"Commanding Officer"
+#define JOB_LP_SO 	"Senior Officer"
+#define JOB_LP_PCDR 	"Platoon Commander"
+#define JOB_LP_JO 	"Junior Officer"
+
+//Platoon roles
+#define JOB_LP_PST 	"Platoon Sergeant"
+#define JOB_LP_RTO 	"Radio Telephone Operator"		//Unused for now
+#define JOB_LP_PE 	"Platoon Engineer"
+
+//Squad Roles
+#define JOB_LP_SL	"Squad Leader"
+#define JOB_LP_SST 	"Squad Support Technician"
+#define JOB_LP_SG 	"Squad Smartgunner"
+#define JOB_LP_MED	"Squad Medic"
+#define JOB_LP_MAR 	"Squad Marine"
+
+//Support Roles
+#define JOB_LP_DOC	"Military Surgeon"
+#define JOB_LP_QM	"Quartermaster"
+
+
+
 //-------- PMC --------//
 #define JOB_PMC_STANDARD "Weyland-Yutani PMC (Standard)"
 #define JOB_PMC_ENGINEER "PMC Corporate Technician"
