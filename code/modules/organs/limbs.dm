@@ -454,7 +454,7 @@ This function completely restores a damaged organ to perfect condition.
 		armor += owner.skills.get_skill_level(SKILL_ENDURANCE)*5
 
 	var/damage_ratio = armor_damage_reduction(GLOB.marine_organ_damage, 2*damage/3, armor, 0, 0, 0, max_damage ? (100*(max_damage - brute_dam) / max_damage) : 100)
-	if(prob(damage_ratio) && damage > 10)
+	if(prob(damage_ratio) && damage > 10 && internal_organs)
 		var/datum/wound/internal_bleeding/I = new (0)
 		add_bleeding(I, TRUE)
 		wounds += I
