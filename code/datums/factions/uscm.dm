@@ -200,7 +200,7 @@
 				marine_rk = "lp_pst"
 				border_rk = "command"
 			if(JOB_LP_PE)
-				marine_rk = "so"
+				marine_rk = "lp_pe"
 				border_rk = "command"
 
 		if(marine_rk)

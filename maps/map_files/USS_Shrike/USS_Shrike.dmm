@@ -66,6 +66,7 @@
 	dir = 1
 	},
 /obj/item/device/cotablet,
+/obj/item/folded_tent/cmd,
 /turf/open/floor/almayer,
 /area/almayer/living/officer_rnr)
 "aan" = (
@@ -1280,6 +1281,10 @@
 	},
 /turf/open/floor/almayer,
 /area/almayer/squads/charlie)
+"cUj" = (
+/obj/structure/machinery/cm_vending/sorted/tech/comtech_tools,
+/turf/open/floor/almayer,
+/area/almayer/hallways)
 "cVA" = (
 /obj/structure/machinery/cm_vending/gear/medic,
 /turf/open/floor/almayer{
@@ -1307,6 +1312,12 @@
 	icon_state = "plate"
 	},
 /area/almayer/squads/bravo)
+"dhK" = (
+/obj/structure/machinery/door/airlock/almayer/engineering/glass{
+	name = "\improper Platoon Engineer Prep"
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways)
 "dmZ" = (
 /obj/structure/machinery/telecomms/bus/preset_four,
 /turf/open/floor/almayer{
@@ -1505,11 +1516,9 @@
 /turf/open/floor/almayer,
 /area/almayer/squads/bravo)
 "gsv" = (
-/obj/structure/machinery/light{
-	dir = 4
-	},
+/obj/structure/surface/rack,
 /turf/open/floor/almayer,
-/area/almayer/hallways)
+/area/almayer/hallways/hangar)
 "guY" = (
 /obj/structure/bed/chair/office/light{
 	dir = 8
@@ -1787,6 +1796,10 @@
 	icon_state = "plate"
 	},
 /area/almayer/squads/charlie)
+"jRg" = (
+/obj/structure/machinery/cm_vending/gear/engi,
+/turf/open/floor/almayer,
+/area/almayer/hallways)
 "jSr" = (
 /turf/open/floor/almayer{
 	icon_state = "dark_sterile"
@@ -2106,6 +2119,10 @@
 	icon_state = "tcomms"
 	},
 /area/space)
+"oPv" = (
+/obj/structure/machinery/cm_vending/clothing/engi,
+/turf/open/floor/almayer,
+/area/almayer/hallways)
 "oTu" = (
 /obj/structure/sink{
 	pixel_y = 32
@@ -2423,8 +2440,9 @@
 /turf/closed/wall/almayer,
 /area/almayer/squads/alpha)
 "suR" = (
-/turf/closed/wall/almayer,
-/area/almayer/hallways/hangar)
+/obj/structure/window/framed/almayer,
+/turf/open/floor/almayer,
+/area/almayer/hallways)
 "sxb" = (
 /obj/structure/machinery/light{
 	dir = 4
@@ -2667,6 +2685,13 @@
 /obj/structure/window/framed/almayer/white,
 /turf/open/floor/almayer,
 /area/almayer/medical/lower_medical_medbay)
+"vOA" = (
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad_prep{
+	density = 0;
+	pixel_y = 20
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways)
 "vSL" = (
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
 	density = 0;
@@ -2710,6 +2735,13 @@
 	icon_state = "orange"
 	},
 /area/space)
+"wgF" = (
+/obj/structure/closet/crate,
+/obj/item/stack/sheet/metal/large_stack,
+/obj/item/stack/sheet/metal/large_stack,
+/obj/item/stack/sheet/plasteel/med_large_stack,
+/turf/open/floor/almayer,
+/area/almayer/hallways)
 "whC" = (
 /obj/structure/machinery/cryopod/right{
 	pixel_y = 6
@@ -20087,7 +20119,7 @@ xWp
 xWp
 xWp
 xWp
-xWp
+gsv
 adb
 adc
 llX
@@ -20290,7 +20322,7 @@ aaJ
 xWp
 xWp
 xWp
-xWp
+gsv
 aeG
 alh
 llX
@@ -20493,7 +20525,7 @@ aaJ
 xWp
 xWp
 xWp
-xWp
+gsv
 aeG
 jox
 llX
@@ -20696,7 +20728,7 @@ aaJ
 xWp
 xWp
 xWp
-xWp
+gsv
 aeG
 cYs
 llX
@@ -21710,8 +21742,8 @@ aaJ
 aaJ
 xWp
 xWp
-suR
-suR
+njT
+njT
 aeG
 aeG
 aeG
@@ -21914,10 +21946,10 @@ aaJ
 xWp
 xWp
 suR
-xWp
+cUj
+nxA
 nun
-nun
-nun
+oPv
 aeG
 rkY
 llX
@@ -22117,10 +22149,10 @@ aaJ
 xWp
 xWp
 suR
-xWp
+wgF
 nun
 nun
-nun
+jRg
 aeG
 ojK
 pPa
@@ -22319,11 +22351,11 @@ aaJ
 aaJ
 xWp
 xWp
-suR
-xWp
+njT
+vOA
 nun
 nun
-nun
+oPv
 aeG
 qmw
 llX
@@ -22522,9 +22554,9 @@ xWp
 xWp
 xWp
 xWp
-suR
-suR
 njT
+njT
+dhK
 njT
 njT
 aeG
@@ -22725,10 +22757,10 @@ xWp
 xWp
 xWp
 xWp
-tKv
-xWp
 nxA
 nun
+nun
+nxA
 nun
 nun
 nxA
@@ -23113,8 +23145,8 @@ aae
 njb
 abA
 xsW
-nun
-nun
+xWp
+xWp
 auf
 qyd
 cwG
@@ -23316,8 +23348,8 @@ aae
 njb
 njb
 abC
-nun
-nun
+xWp
+xWp
 ctI
 hTp
 jSr
@@ -23519,8 +23551,8 @@ abk
 njb
 njb
 abC
-nun
-nun
+xWp
+xWp
 ctI
 jKn
 jSr
@@ -23722,8 +23754,8 @@ aae
 jbY
 njb
 abC
-nun
-nun
+xWp
+xWp
 ctI
 wbM
 jSr
@@ -23925,8 +23957,8 @@ aae
 njb
 njb
 abC
-nun
-nun
+xWp
+xWp
 auf
 drI
 qFj
@@ -24128,8 +24160,8 @@ aae
 njb
 njb
 abE
-nun
-nun
+xWp
+xWp
 auf
 auf
 auf
@@ -24331,8 +24363,8 @@ aae
 njb
 njb
 njb
-nun
-nun
+xWp
+xWp
 auf
 oTu
 wbM
@@ -24534,8 +24566,8 @@ aae
 njb
 njb
 abC
-nun
-nun
+xWp
+xWp
 auf
 qMt
 jSr
@@ -24737,8 +24769,8 @@ wpI
 jbY
 njb
 abC
-nun
-gsv
+xWp
+syM
 auf
 vmG
 xHG
