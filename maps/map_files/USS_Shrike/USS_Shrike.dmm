@@ -1093,6 +1093,10 @@
 "bdH" = (
 /turf/open/space/basic,
 /area/space)
+"beU" = (
+/obj/structure/machinery/cm_vending/sorted/tech/comtech_tools,
+/turf/open/floor/almayer,
+/area/almayer/hallways)
 "bmF" = (
 /obj/effect/landmark/start/marine/charlie,
 /obj/effect/landmark/late_join/charlie,
@@ -1219,8 +1223,9 @@
 /turf/open/floor/almayer,
 /area/almayer/squads/alpha)
 "clo" = (
-/obj/item/device/megaphone,
 /obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/storage/backpack/marine/satchel/rto,
+/obj/item/device/megaphone,
 /turf/open/floor/almayer,
 /area/almayer/shipboard/sea_office)
 "cot" = (
@@ -1281,10 +1286,6 @@
 	},
 /turf/open/floor/almayer,
 /area/almayer/squads/charlie)
-"cUj" = (
-/obj/structure/machinery/cm_vending/sorted/tech/comtech_tools,
-/turf/open/floor/almayer,
-/area/almayer/hallways)
 "cVA" = (
 /obj/structure/machinery/cm_vending/gear/medic,
 /turf/open/floor/almayer{
@@ -1312,12 +1313,6 @@
 	icon_state = "plate"
 	},
 /area/almayer/squads/bravo)
-"dhK" = (
-/obj/structure/machinery/door/airlock/almayer/engineering/glass{
-	name = "\improper Platoon Engineer Prep"
-	},
-/turf/open/floor/almayer,
-/area/almayer/hallways)
 "dmZ" = (
 /obj/structure/machinery/telecomms/bus/preset_four,
 /turf/open/floor/almayer{
@@ -1627,6 +1622,10 @@
 	icon_state = "dark_sterile"
 	},
 /area/almayer/living/officer_rnr)
+"iak" = (
+/obj/structure/machinery/cm_vending/clothing/engi,
+/turf/open/floor/almayer,
+/area/almayer/hallways)
 "ibQ" = (
 /obj/structure/machinery/telecomms/processor/preset_four,
 /turf/open/floor/almayer{
@@ -1796,10 +1795,6 @@
 	icon_state = "plate"
 	},
 /area/almayer/squads/charlie)
-"jRg" = (
-/obj/structure/machinery/cm_vending/gear/engi,
-/turf/open/floor/almayer,
-/area/almayer/hallways)
 "jSr" = (
 /turf/open/floor/almayer{
 	icon_state = "dark_sterile"
@@ -2119,10 +2114,6 @@
 	icon_state = "tcomms"
 	},
 /area/space)
-"oPv" = (
-/obj/structure/machinery/cm_vending/clothing/engi,
-/turf/open/floor/almayer,
-/area/almayer/hallways)
 "oTu" = (
 /obj/structure/sink{
 	pixel_y = 32
@@ -2439,8 +2430,19 @@
 "rRL" = (
 /turf/closed/wall/almayer,
 /area/almayer/squads/alpha)
+"slF" = (
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad_prep{
+	density = 0;
+	pixel_y = 20
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways)
 "suR" = (
 /obj/structure/window/framed/almayer,
+/turf/open/floor/almayer,
+/area/almayer/hallways)
+"svi" = (
+/obj/structure/machinery/cm_vending/gear/engi,
 /turf/open/floor/almayer,
 /area/almayer/hallways)
 "sxb" = (
@@ -2493,6 +2495,12 @@
 	},
 /turf/open/floor/almayer,
 /area/almayer/squads/bravo)
+"tjb" = (
+/obj/structure/machinery/door/airlock/almayer/engineering/glass{
+	name = "\improper Platoon Engineer Prep"
+	},
+/turf/open/floor/almayer,
+/area/almayer/hallways)
 "tjN" = (
 /obj/effect/landmark/late_join,
 /obj/structure/machinery/light{
@@ -2685,13 +2693,6 @@
 /obj/structure/window/framed/almayer/white,
 /turf/open/floor/almayer,
 /area/almayer/medical/lower_medical_medbay)
-"vOA" = (
-/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad_prep{
-	density = 0;
-	pixel_y = 20
-	},
-/turf/open/floor/almayer,
-/area/almayer/hallways)
 "vSL" = (
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
 	density = 0;
@@ -2735,13 +2736,6 @@
 	icon_state = "orange"
 	},
 /area/space)
-"wgF" = (
-/obj/structure/closet/crate,
-/obj/item/stack/sheet/metal/large_stack,
-/obj/item/stack/sheet/metal/large_stack,
-/obj/item/stack/sheet/plasteel/med_large_stack,
-/turf/open/floor/almayer,
-/area/almayer/hallways)
 "whC" = (
 /obj/structure/machinery/cryopod/right{
 	pixel_y = 6
@@ -2880,6 +2874,13 @@
 "xsW" = (
 /turf/closed/wall/almayer/reinforced,
 /area/almayer/command/cichallway)
+"xBn" = (
+/obj/structure/closet/crate,
+/obj/item/stack/sheet/metal/large_stack,
+/obj/item/stack/sheet/metal/large_stack,
+/obj/item/stack/sheet/plasteel/med_large_stack,
+/turf/open/floor/almayer,
+/area/almayer/hallways)
 "xCR" = (
 /obj/effect/step_trigger/teleporter/random{
 	affect_ghosts = 1;
@@ -21946,10 +21947,10 @@ aaJ
 xWp
 xWp
 suR
-cUj
+beU
 nxA
 nun
-oPv
+iak
 aeG
 rkY
 llX
@@ -22149,10 +22150,10 @@ aaJ
 xWp
 xWp
 suR
-wgF
+xBn
 nun
 nun
-jRg
+svi
 aeG
 ojK
 pPa
@@ -22352,10 +22353,10 @@ aaJ
 xWp
 xWp
 njT
-vOA
+slF
 nun
 nun
-oPv
+iak
 aeG
 qmw
 llX
@@ -22556,7 +22557,7 @@ xWp
 xWp
 njT
 njT
-dhK
+tjb
 njT
 njT
 aeG

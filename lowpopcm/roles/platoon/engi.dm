@@ -32,4 +32,8 @@
 	utility_under = list(/obj/item/clothing/under/marine/officer/engi)
 
 /datum/equipment_preset/uscm_ship/maint/lowpop/load_gear(mob/living/carbon/human/new_human)
-	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/ce(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/ce/pe(new_human), WEAR_L_EAR)
+
+/obj/item/device/radio/headset/almayer/ce/pe
+	name = "platoon engineer's headset"
+	volume = RADIO_VOLUME_RAISED
