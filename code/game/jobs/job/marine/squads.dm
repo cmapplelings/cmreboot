@@ -153,15 +153,16 @@
 	radio_freq = DELTA_FREQ
 	minimap_color = MINIMAP_SQUAD_DELTA
 
-/*datum/squad/marine/delta/New()
-	if(SSticker.mode != /datum/game_mode/colonialmarines/lowpop)
+//Can't be changed on the fly.
+/datum/squad/marine/delta/New()
+	if(SSticker.mode == /datum/game_mode/colonialmarines)
 		return
 		//Lowpop update.
-		*/
+
 	active = FALSE
 	roundstart = FALSE
 	locked = TRUE
-//	..()
+	..()
 
 /datum/squad/marine/echo
 	name = SQUAD_MARINE_5
