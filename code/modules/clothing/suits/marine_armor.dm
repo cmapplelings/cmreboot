@@ -89,7 +89,7 @@
 	var/locate_cooldown = 0 //Cooldown for SL locator
 	var/armor_overlays[]
 	actions_types = list(/datum/action/item_action/toggle)
-	var/flags_marine_armor = ARMOR_SQUAD_OVERLAY|ARMOR_LAMP_OVERLAY
+	var/flags_marine_armor = ARMOR_LAMP_OVERLAY
 	var/specialty = "M3 pattern marine" //Same thing here. Give them a specialty so that they show up correctly in vendors. speciality does NOTHING if you have NO_NAME_OVERRIDE
 	w_class = SIZE_HUGE
 	uniform_restricted = list(/obj/item/clothing/under/marine)
