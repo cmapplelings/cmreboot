@@ -111,7 +111,7 @@
 
 /datum/emergency_call/upp/friendly/New()
 	..()
-	arrival_message = "This is UPP dispatch. USS Almayer, We are responding to your distress call, we will render aid as able, do not fire."
+	arrival_message = "This is UPP dispatch. USS Marlow, We are responding to your distress call, we will render aid as able, do not fire."
 	objectives = "Render assistance towards the UA Forces, Listen to your superior officers."
 
 /datum/emergency_call/upp/platoon
@@ -137,7 +137,7 @@
 
 /datum/emergency_call/upp/platoon/friendly/New()
 	..()
-	arrival_message = "This is UPP dispatch. USS Almayer, We are responding to your distress call, we will render aid as able, do not fire."
+	arrival_message = "This is UPP dispatch. USS Marlow, We are responding to your distress call, we will render aid as able, do not fire."
 	objectives = "Render assistance towards the UA Forces, Listen to your superior officers."
 
 /obj/effect/landmark/ert_spawns/distress_upp

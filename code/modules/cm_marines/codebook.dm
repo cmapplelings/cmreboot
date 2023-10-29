@@ -21,7 +21,7 @@ GLOBAL_LIST_EMPTY(codebook_data)
 	return code_data
 
 /obj/item/book/codebook
-	name = "USS Almayer Code Book"
+	name = "USS Marlow Code Book"
 	author = "United States Colonial Marines"
 	unique = 1
 	dat = ""

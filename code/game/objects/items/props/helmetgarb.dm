@@ -512,6 +512,6 @@
 
 /obj/item/prop/helmetgarb/chaplain_patch
 	name = "\improper USCM chaplain helmet patch"
-	desc = "This patch is all that remains of the Chaplaincy of the USS Almayer, along with the Chaplains themselves. Both no longer exist as a result of losses suffered during Operation Tychon Tackle."
+	desc = "This patch is all that remains of the Chaplaincy of the USS Marlow, along with the Chaplains themselves. Both no longer exist as a result of losses suffered during Operation Tychon Tackle."
 	icon_state = "chaplain_patch"
 	flags_obj = OBJ_NO_HELMET_BAND
