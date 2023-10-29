@@ -271,7 +271,7 @@ SUBSYSTEM_DEF(vote)
 				choices.Add("Restart Round", "Continue Playing")
 			if("gamemode")
 				question = "Gamemode vote"
-				randomize_entries = TRUE
+				randomize_entries = FALSE
 				for(var/mode_type in config.gamemode_cache)
 					var/datum/game_mode/M = mode_type
 					if(initial(M.config_tag))
@@ -282,7 +282,7 @@ SUBSYSTEM_DEF(vote)
 				question = "Ground map vote"
 				vote_sound = 'sound/voice/start_your_voting.ogg'
 				vote_sound_vol = 15
-				randomize_entries = TRUE
+				randomize_entries = FALSE
 				var/list/maps = list()
 				for(var/i in config.maplist[GROUND_MAP])
 					var/datum/map_config/VM = config.maplist[GROUND_MAP][i]

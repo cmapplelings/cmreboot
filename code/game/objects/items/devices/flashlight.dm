@@ -263,7 +263,7 @@
 
 /obj/item/device/flashlight/flare/Initialize()
 	. = ..()
-	fuel = rand(9.5 MINUTES, 10.5 MINUTES)
+	fuel = rand(15 MINUTES, 20 MINUTES)
 	set_light_color(flame_tint)
 
 /obj/item/device/flashlight/flare/update_icon()
@@ -389,7 +389,7 @@
 
 /obj/item/device/flashlight/flare/on/illumination/Initialize()
 	. = ..()
-	fuel = rand(4.5 MINUTES, 5.5 MINUTES) // Half the duration of a flare, but justified since it's invincible
+	fuel = rand(7.5 MINUTES, 10 MINUTES) // Half the duration of a flare, but justified since it's invincible
 
 /obj/item/device/flashlight/flare/on/illumination/update_icon()
 	return
