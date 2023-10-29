@@ -1,11 +1,9 @@
-//Disabled for now, look into Lowpop standard.
-
 #define HIJACK_EXPLOSION_COUNT 5
 #define MARINE_MAJOR_ROUND_END_DELAY 3 MINUTES
 
 /datum/game_mode/colonialmarines
-	name = "Distress Signal"
-	config_tag = "Distress Signal"
+	name = "Distress Signal (Lowpop)"
+	config_tag = "Distress Signal Lowpop"
 	required_players = 1 //Need at least one player, but really we need 2.
 	xeno_required_num = 1 //Need at least one xeno.
 	monkey_amount = 5
@@ -21,7 +19,7 @@
 	role_mappings = list(
 		/datum/job/command/commander/lowpop = JOB_CO,
 		/datum/job/command/executive/lowpop = JOB_XO,
-		/datum/job/command/executive/pcdr = JOB_SO,
+		/datum/job/command/lowpop = JOB_SO,
 		/datum/job/command/psgt = JOB_PILOT,
 		/datum/job/marine/leader/lowpop = JOB_SQUAD_LEADER,
 		/datum/job/logistics/maint/lowpop = JOB_MAINT_TECH,
@@ -42,7 +40,12 @@
 	to_chat_spaced(world, type = MESSAGE_TYPE_SYSTEM, html = SPAN_ROUNDHEADER("The current map is - [SSmapping.configs[GROUND_MAP].map_name]!"))
 
 /datum/game_mode/colonialmarines/get_roles_list()
-	return ROLES_DISTRESS_SIGNAL
+	return ROLES_DISTRESS_SIGNAL_LP
+
+var/global/list/ROLES_LP_USCM = list(JOB_LP_CO, JOB_LP_SO, JOB_LP_PCDR, JOB_LP_JO, JOB_LP_PST, JOB_LP_PE, JOB_LP_SL, JOB_LP_SST, JOB_LP_SG, JOB_LP_MED, JOB_LP_MAR)
+
+var/global/list/ROLES_DISTRESS_SIGNAL_LP = ROLES_LP_USCM + ROLES_XENO
+
 
 ////////////////////////////////////////////////////////////////////////////////////////
 //Temporary, until we sort this out properly.
@@ -278,7 +281,7 @@
 			continue
 
 	if(groundside_humans > (groundside_xenos * GROUNDSIDE_XENO_MULTIPLIER))
-		SSticker.mode.get_specific_call("Xenomorphs Groundside (Forsaken)", TRUE, FALSE)
+		SSticker.mode.get_specific_call("Xenomorphs Groundside (Forsaken)", TRUE, FALSE, FALSE, announce_dispatch_message = FALSE)
 
 	TIMER_COOLDOWN_START(src, COOLDOWN_HIJACK_GROUND_CHECK, 1 MINUTES)
 
