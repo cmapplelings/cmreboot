@@ -16,6 +16,6 @@ map almayer
 	default
 endmap
 
-map shrike
+map marlow
 	default
 endmap
