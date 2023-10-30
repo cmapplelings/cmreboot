@@ -117,7 +117,6 @@
 /obj/item/device/radio/marine,
 /obj/item/device/radio/marine,
 /obj/item/device/radio/marine,
-/obj/item/folded_tent/cmd,
 /turf/open/floor/almayer{
 	icon_state = "redfull"
 	},
@@ -1696,6 +1695,13 @@
 	icon_state = "tcomms"
 	},
 /area/space)
+"iWa" = (
+/obj/item/bedsheet/brown,
+/obj/structure/bed,
+/turf/open/floor/almayer{
+	icon_state = "dark_sterile"
+	},
+/area/almayer/living/officer_rnr)
 "jbq" = (
 /obj/structure/machinery/computer/telecomms/traffic,
 /turf/open/floor/almayer{
@@ -2087,6 +2093,18 @@
 	icon_state = "plate"
 	},
 /area/almayer/squads/bravo)
+"nWH" = (
+/obj/structure/machinery/door/airlock/almayer/command/reinforced{
+	access_modified = 1;
+	dir = 1;
+	name = "\improper Junior Officer's Quarters";
+	req_access = null;
+	req_access_txt = null
+	},
+/turf/open/floor/almayer{
+	icon_state = "dark_sterile"
+	},
+/area/almayer/living/officer_rnr)
 "ohC" = (
 /obj/effect/landmark/start/marine/bravo,
 /obj/effect/landmark/late_join/bravo,
@@ -2335,6 +2353,16 @@
 	icon_state = "green"
 	},
 /area/almayer/squads/req)
+"qTw" = (
+/obj/structure/closet/secure_closet/staff_officer/gear,
+/obj/item/clothing/suit/storage/jacket/marine/service,
+/obj/item/clothing/suit/storage/jacket/marine/service,
+/obj/item/clothing/suit/storage/jacket/marine/dress,
+/obj/item/clothing/suit/storage/jacket/marine/dress,
+/turf/open/floor/almayer{
+	icon_state = "dark_sterile"
+	},
+/area/almayer/living/officer_rnr)
 "raw" = (
 /turf/closed/wall/almayer,
 /area/almayer/squads/bravo)
@@ -27196,9 +27224,9 @@ bdH
 bdH
 bdH
 eHr
-hXd
-hXd
-hXd
+iWa
+iWa
+iWa
 wpI
 njb
 njb
@@ -27402,7 +27430,7 @@ eHr
 hXd
 hXd
 hXd
-wpI
+nWH
 njb
 njb
 njb
@@ -27602,9 +27630,9 @@ bdH
 bdH
 bdH
 eHr
-hXd
-hXd
-hXd
+qTw
+qTw
+qTw
 wpI
 abw
 abB
