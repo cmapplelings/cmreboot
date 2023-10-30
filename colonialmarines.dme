@@ -2430,6 +2430,8 @@
 #include "interface\skin.dmf"
 #include "lowpopcm\defines\job.dm"
 #include "lowpopcm\gamemodes\lowpopstandard.dm"
+#include "lowpopcm\items\belts.dm"
+#include "lowpopcm\items\guncases.dm"
 #include "lowpopcm\roles\command\co.dm"
 #include "lowpopcm\roles\command\pco.dm"
 #include "lowpopcm\roles\command\so.dm"
@@ -2440,5 +2442,7 @@
 #include "lowpopcm\roles\squad\medic.dm"
 #include "lowpopcm\roles\squad\rto.dm"
 #include "lowpopcm\roles\squad\sg.dm"
+#include "lowpopcm\vending\platoonco.dm"
+#include "lowpopcm\vending\platoonsgt.dm"
 #include "maps\_basemap.dm"
 // END_INCLUDE
