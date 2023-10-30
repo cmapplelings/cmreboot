@@ -4,8 +4,8 @@
 #define MARINE_MAJOR_ROUND_END_DELAY 3 MINUTES
 
 /datum/game_mode/colonialmarines
-	name = "Distress Signal"
-	config_tag = "Distress Signal"
+	name = "Distress Signal (Lowpop)"
+	config_tag = "Distress Signal Lowpop"
 	required_players = 1 //Need at least one player, but really we need 2.
 	xeno_required_num = 1 //Need at least one xeno.
 	monkey_amount = 5
@@ -41,6 +41,7 @@
 /datum/game_mode/colonialmarines/announce()
 	to_chat_spaced(world, type = MESSAGE_TYPE_SYSTEM, html = SPAN_ROUNDHEADER("The current map is - [SSmapping.configs[GROUND_MAP].map_name]!"))
 
+//This has been updated in the new lowpopcm folder. See that for the new roles list.
 /datum/game_mode/colonialmarines/get_roles_list()
 	return ROLES_DISTRESS_SIGNAL
 

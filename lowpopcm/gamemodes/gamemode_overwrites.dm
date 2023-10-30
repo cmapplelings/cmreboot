@@ -1,10 +1,12 @@
 /datum/game_mode/colonialmarines/lowpop
-	name = "Distress Signal (Old)"
-	config_tag = "Distress Signal Old"
+	name = "Distress Signal"
+	config_tag = "Distress Signal"
 
 ////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////
 
+
+//This overwrites the old standard Distress signal gamemode.
 /* Pre-pre-startup */
 /datum/game_mode/colonialmarines/get_roles_list()
 	return ROLES_DISTRESS_SIGNAL_LP
