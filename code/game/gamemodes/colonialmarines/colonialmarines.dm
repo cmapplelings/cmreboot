@@ -4,8 +4,8 @@
 #define MARINE_MAJOR_ROUND_END_DELAY 3 MINUTES
 
 /datum/game_mode/colonialmarines
-	name = "Distress Signal (Lowpop)"
-	config_tag = "Distress Signal Lowpop"
+	name = "Distress Signal"
+	config_tag = "Distress Signal"
 	required_players = 1 //Need at least one player, but really we need 2.
 	xeno_required_num = 1 //Need at least one xeno.
 	monkey_amount = 5
@@ -18,17 +18,6 @@
 	var/next_research_allocation = 0
 	var/next_stat_check = 0
 	var/list/running_round_stats = list()
-	role_mappings = list(
-		/datum/job/command/commander/lowpop = JOB_CO,
-		/datum/job/command/executive/lowpop = JOB_XO,
-		/datum/job/command/executive/pcdr = JOB_SO,
-		/datum/job/command/psgt = JOB_PILOT,
-		/datum/job/marine/leader/lowpop = JOB_SQUAD_LEADER,
-		/datum/job/logistics/maint/lowpop = JOB_MAINT_TECH,
-		/datum/job/marine/lowpopsmartgunner = JOB_SQUAD_SMARTGUN,
-		/datum/job/marine/lowpopmedic = JOB_SQUAD_MEDIC,
-		/datum/job/marine/lowpop = JOB_SQUAD_MARINE,
-	)
 
 ////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////
