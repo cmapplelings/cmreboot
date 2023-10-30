@@ -93,15 +93,5 @@ GLOBAL_LIST_INIT(cm_vending_clothing_platooncdr, list(
 	vendor_role = list(JOB_LP_PCDR)
 
 /obj/structure/machinery/cm_vending/clothing/platooncdr/get_listed_products(mob/user)
-	return GLOB.cm_vending_gear_platooncdr
-
-
-//------------ESSENTIAL SETS---------------
-
-/obj/effect/essentials_set/psgt
-	spawned_gear_list = list(
-		/obj/item/device/binoculars/range/designator,
-		/obj/item/storage/box/m94/signal,
-		/obj/item/device/binoculars/designator
-	)
+	return GLOB.cm_vending_clothing_platooncdr
 

@@ -82,7 +82,7 @@ GLOBAL_LIST_INIT(cm_vending_gear_platoonsgt, list(
 GLOBAL_LIST_INIT(cm_vending_clothing_platoonsgt, list(
 		list("STANDARD EQUIPMENT (TAKE ALL)", 0, null, null, null),
 		list("Standard Marine Apparel", 0, list(/obj/item/clothing/gloves/marine, /obj/item/clothing/head/helmet/marine/leader), MARINE_CAN_BUY_UNIFORM, VENDOR_ITEM_MANDATORY),
-		list("B18 Pattern Armor", 0, /obj/item/clothing/gloves/marine/specialist, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+		list("M3 Platoon Sergeant Armor", 0, /obj/item/clothing/suit/storage/marine/sof, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
 		list("MRE", 0, /obj/item/storage/box/MRE, MARINE_CAN_BUY_MRE, VENDOR_ITEM_MANDATORY),
 		list("Map", 0, /obj/item/map/current_map, MARINE_CAN_BUY_ATTACHMENT, VENDOR_ITEM_MANDATORY),
 		list("USCM Radio Telephone Pack", 0, /obj/item/storage/backpack/marine/satchel/rto, null, VENDOR_ITEM_MANDATORY),
@@ -133,7 +133,6 @@ GLOBAL_LIST_INIT(cm_vending_clothing_platoonsgt, list(
 
 /obj/effect/essentials_set/psgt
 	spawned_gear_list = list(
-		/obj/item/device/binoculars/range/designator,
 		/obj/item/storage/box/m94/signal,
 		/obj/item/device/binoculars/designator
 	)
