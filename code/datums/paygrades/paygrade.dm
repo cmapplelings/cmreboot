@@ -41,6 +41,21 @@ GLOBAL_LIST_INIT(highcom_paygrades, list(
 	"PvCM"
 ))
 
+GLOBAL_LIST_INIT(command_paygrades, list(
+	"NO6",
+	"NO6E",
+	"NO6C",
+	"NO5",
+	"NO4",
+	"MO6",
+	"MO6E",
+	"MO6C",
+	"MO5",
+	"MO4",
+	"MO3",
+	"MO2"
+))
+
 GLOBAL_LIST_INIT(co_paygrades, list(
 	"NO6",
 	"NO6E",
