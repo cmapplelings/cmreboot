@@ -18,17 +18,6 @@
 	var/next_research_allocation = 0
 	var/next_stat_check = 0
 	var/list/running_round_stats = list()
-	role_mappings = list(
-		/datum/job/command/commander/lowpop = JOB_CO,
-		/datum/job/command/executive/lowpop = JOB_XO,
-		/datum/job/command/executive/pcdr = JOB_SO,
-		/datum/job/command/psgt = JOB_PILOT,
-		/datum/job/marine/leader/lowpop = JOB_SQUAD_LEADER,
-		/datum/job/logistics/maint/lowpop = JOB_MAINT_TECH,
-		/datum/job/marine/lowpopsmartgunner = JOB_SQUAD_SMARTGUN,
-		/datum/job/marine/lowpopmedic = JOB_SQUAD_MEDIC,
-		/datum/job/marine/lowpop = JOB_SQUAD_MARINE,
-	)
 
 ////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -41,6 +30,7 @@
 /datum/game_mode/colonialmarines/announce()
 	to_chat_spaced(world, type = MESSAGE_TYPE_SYSTEM, html = SPAN_ROUNDHEADER("The current map is - [SSmapping.configs[GROUND_MAP].map_name]!"))
 
+//This has been updated in the new lowpopcm folder. See that for the new roles list.
 /datum/game_mode/colonialmarines/get_roles_list()
 	return ROLES_DISTRESS_SIGNAL
 
