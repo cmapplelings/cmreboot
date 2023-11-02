@@ -363,6 +363,13 @@
 	role_comm_title = "CT"
 	skills = /datum/skills/CT
 
+/datum/equipment_preset/uscm_ship/cargo/lowpop
+	name = "USCM Armorer"
+	assignment = JOB_LP_CARGO_TECH
+	rank = JOB_LP_CARGO_TECH
+	paygrade = "ME3"
+	role_comm_title = "Arm"
+
 	minimap_icon = "ct"
 
 	utility_under = list(/obj/item/clothing/under/rank/cargotech)
@@ -381,11 +388,12 @@
 	new_human.equip_to_slot_or_del(new back_item(new_human), WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/general/medium(new_human), WEAR_R_STORE)
 
+/*
 /datum/equipment_preset/uscm_ship/cargo/load_rank(mob/living/carbon/human/new_human)
 	if(new_human.client)
 		if(get_job_playtime(new_human.client, rank) < JOB_PLAYTIME_TIER_1)
 			return "ME1"
-	return paygrade
+	return paygrade*/
 
 //*****************************************************************************************************/
 
@@ -513,6 +521,19 @@
 
 	dress_extra = list(/obj/item/storage/large_holster/ceremonial_sword/full)
 
+/datum/equipment_preset/uscm_ship/xo/pcdr
+	name = "USCM Platoon Commander (PCDR)"
+	flags = EQUIPMENT_PRESET_START_OF_ROUND|EQUIPMENT_PRESET_MARINE
+
+	assignment = JOB_LP_PCDR
+	rank = JOB_LP_PCDR
+	paygrade = "MO2"
+	role_comm_title = "PCDR"
+	minimum_age = 30
+
+	minimap_icon = list("cic" = MINIMAP_ICON_COLOR_SILVER)
+	minimap_background = MINIMAP_ICON_BACKGROUND_CIC
+
 /datum/equipment_preset/uscm_ship/xo/New()
 	. = ..()
 	access = get_access(ACCESS_LIST_MARINE_MAIN)
@@ -559,6 +580,37 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/officer/bridge(new_human), WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/dress(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/mod88(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/bridge(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new back_item(new_human), WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/general/large(new_human), WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/general/large(new_human), WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range(new_human), WEAR_L_HAND)
+
+//*****************************************************************************************************/
+
+/datum/equipment_preset/uscm_ship/so/psgt
+	name = "USCM Platoon Sergeant (PSGT)"
+	flags = EQUIPMENT_PRESET_START_OF_ROUND|EQUIPMENT_PRESET_MARINE
+
+	access = list(ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_DATABASE, ACCESS_MARINE_MEDBAY)
+	assignment = JOB_LP_PSGT
+	rank = JOB_LP_PSGT
+	paygrade = "ME6"
+	role_comm_title = "PSGT"
+	minimum_age = 30
+	skills = /datum/skills/SL
+
+	minimap_icon = list("cic" = MINIMAP_ICON_COLOR_BRONZE)
+	minimap_background = MINIMAP_ICON_BACKGROUND_CIC
+
+/datum/equipment_preset/uscm_ship/so/psgt/load_gear(mob/living/carbon/human/new_human)
+	var/back_item = /obj/item/storage/backpack/satchel
+	if (new_human.client && new_human.client.prefs && (new_human.client.prefs.backbag == 1))
+		back_item = /obj/item/storage/backpack/marine
+
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/mcom(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/officer/boiler(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/knife(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/bridge(new_human), WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new back_item(new_human), WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/general/large(new_human), WEAR_L_STORE)

@@ -8,6 +8,11 @@
 	gear_preset = /datum/equipment_preset/uscm/sg
 	entry_message_body = "<a href='%WIKIPAGE%'>You are the smartgunner.</a> Your task is to provide heavy weapons support."
 
+/datum/job/marine/smartgunner/lowpop
+	title = JOB_LP_SQUAD_SMARTGUN
+	total_positions = 3
+	spawn_positions = 3
+
 /datum/job/marine/smartgunner/set_spawn_positions(count)
 	spawn_positions = sg_slot_formula(count)
 

@@ -7,6 +7,11 @@
 	gear_preset = /datum/equipment_preset/uscm/medic
 	entry_message_body = "<a href='%WIKIPAGE%'>You tend the wounds of your squad mates</a> and make sure they are healthy and active. You may not be a fully-fledged doctor, but you stand between life and death when it matters."
 
+/datum/job/marine/medic/lowpop
+	title = JOB_LP_SQUAD_MEDIC
+	total_positions = 6
+	spawn_positions = 6
+
 /datum/job/marine/medic/set_spawn_positions(count)
 	for(var/datum/squad/sq in RoleAuthority.squads)
 		if(sq)

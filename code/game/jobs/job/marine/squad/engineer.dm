@@ -7,6 +7,11 @@
 	gear_preset = /datum/equipment_preset/uscm/engineer
 	entry_message_body = "You have the <a href='%WIKIURL%'>equipment and skill</a> to build fortifications, reroute power lines, and bunker down. Your squaddies will look to you when it comes to construction in the field of battle."
 
+/datum/job/marine/engineer/lowpop
+	title = JOB_LP_SQUAD_ENGI
+	total_positions = 6
+	spawn_positions = 6
+
 /datum/job/marine/engineer/set_spawn_positions(count)
 	for(var/datum/squad/sq in RoleAuthority.squads)
 		if(sq)
