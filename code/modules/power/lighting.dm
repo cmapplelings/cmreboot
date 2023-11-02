@@ -777,10 +777,10 @@
 	set_light(0)
 
 /obj/structure/machinery/landinglight/ds1
-	id = "USS Marlow Dropship 1" // ID for landing zone
+	id = "USS Almayer Dropship 1" // ID for landing zone
 
 /obj/structure/machinery/landinglight/ds2
-	id = "USS Marlow Dropship 2" // ID for landing zone
+	id = "USS Almayer Dropship 2" // ID for landing zone
 
 /obj/structure/machinery/landinglight/proc/turn_on()
 	icon_state = initial(icon_state) + "0"

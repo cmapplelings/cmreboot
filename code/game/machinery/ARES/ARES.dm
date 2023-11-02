@@ -83,7 +83,7 @@
 
 /obj/structure/machinery/ares/processor/bioscan
 	name = "ARES Processor (Bioscan)"
-	desc = "The external component of ARES' Bioscan systems. Without this, the USS Marlow would be incapable of running bioscans!"
+	desc = "The external component of ARES' Bioscan systems. Without this, the USS Almayer would be incapable of running bioscans!"
 	icon_state = "bio_processor"
 
 /obj/structure/machinery/ares/processor/bioscan/link_systems(datum/ares_link/new_link = GLOB.ares_link, override)

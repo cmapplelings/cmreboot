@@ -27,7 +27,7 @@
 		if(salvo == TRUE)
 			quantity = tgui_input_number(src, "How many?", "Don't go overboard. Please.", 2, 10, 2, 20 SECONDS)
 
-	var/prompt = tgui_alert(src, "Are you sure you want to open fire at the USS Marlow with those parameters?", "Choose wisely!", list("Yes", "No"), 20 SECONDS)
+	var/prompt = tgui_alert(src, "Are you sure you want to open fire at the USS Almayer with those parameters?", "Choose wisely!", list("Yes", "No"), 20 SECONDS)
 	if(prompt != "Yes")
 		return
 	var/atom/picked_atom
@@ -87,7 +87,7 @@
 					targets = null
 
 				if(salvo == FALSE)
-					prompt = tgui_alert(src, "Are you sure you want to shoot a railgun slug at the USS Marlow at a random place?", "Choose wisely!", list("Yes", "No"), 20 SECONDS)
+					prompt = tgui_alert(src, "Are you sure you want to shoot a railgun slug at the USS Almayer at a random place?", "Choose wisely!", list("Yes", "No"), 20 SECONDS)
 					if(prompt == "Yes")
 						shipwide_ai_announcement("DANGER: RAILGUN EMISSIONS DETECTED, INCOMING SHOT. BRACE, BRACE, BRACE. ESTIMATED TIME: [hiteta] SECONDS." , MAIN_AI_SYSTEM, 'sound/effects/missile_warning.ogg')
 						picked_atom = shipside_random_turf_picker(1)

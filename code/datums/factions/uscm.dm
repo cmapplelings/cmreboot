@@ -29,9 +29,6 @@
 			if(JOB_MARINE_RAIDER) marine_rk = "soc"
 			if(JOB_MARINE_RAIDER_SL) marine_rk = "soctl"
 			if(JOB_MARINE_RAIDER_CMD) marine_rk = "soccmd"
-			//Lowpop
-			if(JOB_LP_SST) marine_rk = "sst"
-
 		if(squad.squad_leader == current_human)
 			switch(squad.squad_type)
 				if("Squad") marine_rk = "leader_a"
@@ -192,16 +189,6 @@
 			if(JOB_CMB_OBS)
 				marine_rk = "obs"
 				icon_prefix = "cmb_"
-			//Lowpop
-			if(JOB_LP_PCDR)
-				marine_rk = "lp_pcdr"
-				border_rk = "command"
-			if(JOB_LP_PST)
-				marine_rk = "lp_pst"
-				border_rk = "command"
-			if(JOB_LP_PE)
-				marine_rk = "lp_pe"
-				border_rk = "command"
 
 		if(marine_rk)
 			var/image/I = image('icons/mob/hud/marine_hud.dmi', current_human, "hudsquad")

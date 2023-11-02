@@ -88,7 +88,7 @@ GLOBAL_LIST_INIT(cm_vending_gear_engi, list(
 	name = "\improper ColMarTech Squad ComTech Gear Rack"
 	desc = "An automated gear rack for combat technicians."
 	icon_state = "eng_gear"
-	vendor_role = list(JOB_SQUAD_ENGI, JOB_LP_PE)
+	vendor_role = list(JOB_SQUAD_ENGI)
 	req_access = list(ACCESS_MARINE_ENGPREP)
 
 /obj/structure/machinery/cm_vending/gear/engi/get_listed_products(mob/user)
@@ -158,7 +158,7 @@ GLOBAL_LIST_INIT(cm_vending_clothing_engi, list(
 	name = "\improper ColMarTech Squad ComTech Equipment Rack"
 	desc = "An automated rack hooked up to a colossal storage of combat technician standard-issue equipment."
 	req_access = list(ACCESS_MARINE_ENGPREP)
-	vendor_role = list(JOB_SQUAD_ENGI, JOB_LP_PE)
+	vendor_role = list(JOB_SQUAD_ENGI)
 
 /obj/structure/machinery/cm_vending/clothing/engi/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_engi
