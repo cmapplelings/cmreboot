@@ -7,6 +7,9 @@
 	flags_whitelist = WHITELIST_COMMANDER
 	gear_preset = /datum/equipment_preset/uscm_ship/commander
 
+/datum/job/command/commander/lowpop
+	title = JOB_LP_CO
+
 /datum/job/command/commander/New()
 	. = ..()
 	gear_preset_whitelist = list(
