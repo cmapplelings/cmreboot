@@ -295,29 +295,9 @@
 /turf/open/floor/carpet,
 /area/almayer/living/officer_rnr)
 "abw" = (
-/obj/item/stack/medical/bruise_pack{
-	pixel_x = -12;
-	pixel_y = -8;
-	amount = 1
-	},
-/obj/item/reagent_container/hypospray/autoinjector/empty{
-	pixel_x = -5;
-	pixel_y = -1
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = -3
-	},
-/obj/structure/machinery/landinglight/ds2/delaytwo{
-	dir = 4
-	},
-/obj/structure/platform{
-	dir = 4;
-	layer = 2.7;
-	pixel_x = -5
-	},
 /turf/open/floor/almayer{
-	icon_state = "plate"
+	dir = 1;
+	icon_state = "cargo_arrow"
 	},
 /area/almayer/hallways/hangar)
 "abx" = (
@@ -4280,6 +4260,16 @@
 	},
 /turf/open/floor/almayer,
 /area/almayer/squads/charlie)
+"jOA" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light{
+	dir = 4;
+	invisibility = 101
+	},
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
+/area/almayer/hull/lower_hull/l_m_p)
 "jRg" = (
 /obj/structure/machinery/cm_vending/gear/engi,
 /obj/effect/decal/cleanable/dirt,
@@ -4897,6 +4887,9 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/almayer/hallways/hangar)
+"mdO" = (
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
 "mfT" = (
 /obj/structure/platform{
 	dir = 8
@@ -5418,13 +5411,10 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/almayer/squads/bravo)
 "nKV" = (
-/obj/item/stack/cable_coil{
-	pixel_x = -9;
-	pixel_y = 5
+/turf/open/floor/almayer{
+	icon_state = "plate"
 	},
-/obj/effect/decal/cleanable/blood/drip,
-/turf/open/floor/plating/plating_catwalk,
-/area/almayer/hallways/hangar)
+/area/space)
 "nLO" = (
 /obj/structure/bed/stool,
 /turf/open/floor/almayer{
@@ -5487,6 +5477,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/almayer{
 	icon_state = "plate"
+	},
+/area/almayer/hull/lower_hull/l_m_p)
+"nRL" = (
+/obj/structure/machinery/cryopod/right,
+/turf/open/floor/almayer{
+	icon_state = "cargo"
 	},
 /area/almayer/hull/lower_hull/l_m_p)
 "nSR" = (
@@ -5667,6 +5663,11 @@
 	icon_state = "plate"
 	},
 /area/almayer/command/telecomms)
+"oBz" = (
+/obj/effect/landmark/ert_spawns/distress_cryo,
+/obj/effect/landmark/late_join,
+/turf/open/floor/almayer,
+/area/almayer/hull/lower_hull/l_m_p)
 "oCZ" = (
 /obj/structure/platform_decoration{
 	dir = 8
@@ -6408,6 +6409,12 @@
 	icon_state = "test_floor4"
 	},
 /area/almayer/squads/req)
+"reC" = (
+/obj/structure/machinery/cryopod,
+/turf/open/floor/almayer{
+	icon_state = "cargo"
+	},
+/area/almayer/hull/lower_hull/l_m_p)
 "rfF" = (
 /obj/structure/pipes/standard/simple/visible{
 	dir = 9
@@ -6854,11 +6861,10 @@
 /turf/open/floor/vault,
 /area/almayer/hallways/hangar)
 "syM" = (
-/obj/structure/sign/usmc{
-	pixel_y = -14
-	},
-/turf/closed/wall/almayer,
-/area/almayer/hallways/hangar)
+/obj/effect/landmark/ert_spawns/distress_cryo,
+/obj/effect/landmark/late_join,
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hull/lower_hull/l_m_p)
 "syW" = (
 /obj/structure/machinery/power/apc/almayer{
 	dir = 4
@@ -7958,6 +7964,19 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/almayer/squads/charlie)
+"vDF" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/hallways/hangar)
+"vGF" = (
+/obj/effect/landmark/ert_spawns/distress_cryo,
+/turf/open/floor/almayer{
+	icon_state = "cargo"
+	},
+/area/almayer/hull/lower_hull/l_m_p)
 "vGQ" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8
@@ -8518,6 +8537,24 @@
 /obj/structure/machinery/door/poddoor/almayer/locked,
 /turf/open/floor/almayer{
 	icon_state = "test_floor4"
+	},
+/area/almayer/hallways/hangar)
+"wJV" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = -3
+	},
+/obj/structure/machinery/landinglight/ds2/delaytwo{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 4;
+	layer = 2.7;
+	pixel_x = -5
+	},
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/almayer{
+	icon_state = "plate"
 	},
 /area/almayer/hallways/hangar)
 "wLG" = (
@@ -27358,18 +27395,18 @@ bdH
 bdH
 bdH
 bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
+aKQ
+fLh
+fLh
+fLh
+fLh
+fLh
+fLh
+fLh
+fLh
+fLh
+fLh
+aKQ
 bdH
 bdH
 bdH
@@ -27561,17 +27598,17 @@ bdH
 bdH
 bdH
 bdH
-aKQ
-fLh
-fLh
-fLh
-fLh
-fLh
-fLh
-fLh
-fLh
-fLh
-fLh
+adI
+wLG
+wLG
+wLG
+wLG
+wLG
+wLG
+wLG
+wLG
+wLG
+wLG
 aKQ
 bdH
 bdH
@@ -27765,15 +27802,15 @@ aKQ
 aKQ
 aKQ
 adI
-wLG
-wLG
-wLG
-wLG
-wLG
-wLG
-wLG
-wLG
-wLG
+cha
+jbq
+uBI
+jyZ
+jac
+ldz
+ibQ
+rnJ
+tyZ
 wLG
 aKQ
 aKQ
@@ -27968,15 +28005,15 @@ aKQ
 aKQ
 aKQ
 adI
-cha
-jbq
-uBI
-jyZ
-jac
+dER
+bsw
+kBM
+iXQ
+jSr
 ldz
-ibQ
-rnJ
-tyZ
+cfN
+kcG
+aaL
 wLG
 aKQ
 aKQ
@@ -28171,15 +28208,15 @@ aKQ
 aKQ
 aKQ
 adI
-dER
-bsw
-kBM
-iXQ
-jSr
-ldz
-cfN
-kcG
-aaL
+xIW
+vfe
+vXi
+pMM
+jac
+hUC
+ntT
+giI
+gEQ
 wLG
 aKQ
 aKQ
@@ -28254,209 +28291,6 @@ bdH
 bdH
 "}
 (95,1,1) = {"
-aaa
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-xCR
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-aKQ
-aKQ
-aKQ
-aKQ
-aKQ
-aKQ
-aKQ
-aKQ
-adI
-xIW
-vfe
-vXi
-pMM
-jac
-hUC
-ntT
-giI
-gEQ
-wLG
-aKQ
-aKQ
-aKQ
-aKQ
-aKQ
-aKQ
-aKQ
-aKQ
-aKQ
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-xCR
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-bdH
-aaa
-"}
-(96,1,1) = {"
 aaa
 bdH
 bdH
@@ -28659,6 +28493,209 @@ bdH
 bdH
 aaa
 "}
+(96,1,1) = {"
+aaa
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+xCR
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+aKQ
+aKQ
+aKQ
+aKQ
+aKQ
+aKQ
+aKQ
+aKQ
+wLG
+abf
+kSg
+juJ
+giI
+jac
+ldz
+dHu
+jSr
+hnq
+wLG
+wLG
+aKQ
+aKQ
+aKQ
+aKQ
+aKQ
+aKQ
+aKQ
+aKQ
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+xCR
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+bdH
+aaa
+"}
 (97,1,1) = {"
 aaa
 bdH
@@ -28782,13 +28819,13 @@ aKQ
 wLG
 abf
 kSg
-juJ
-giI
-jac
+pDY
+kcG
+mDg
 ldz
-dHu
-jSr
-hnq
+hcZ
+nLO
+uba
 wLG
 wLG
 aKQ
@@ -28983,15 +29020,15 @@ aKQ
 aKQ
 aKQ
 wLG
-abf
-kSg
-pDY
-kcG
-mDg
+wLG
+ess
+rfF
+oZw
+jSr
 ldz
-hcZ
-nLO
-uba
+aZa
+jac
+clo
 wLG
 wLG
 aKQ
@@ -29182,19 +29219,19 @@ lme
 rvw
 lme
 rvw
-lme
+xfj
 rvw
 lme
 wLG
 wLG
-ess
-rfF
-oZw
-jSr
-ldz
-aZa
-jac
-clo
+wLG
+swe
+iSj
+iSj
+wLG
+wLG
+sNQ
+swe
 wLG
 wLG
 lme
@@ -29388,18 +29425,18 @@ aaJ
 lme
 tDP
 lme
-wLG
-wLG
-wLG
-swe
-iSj
-iSj
-wLG
-wLG
-sNQ
-swe
-wLG
-wLG
+mdO
+mdO
+mdO
+mdO
+nKV
+nKV
+nKV
+nKV
+nKV
+mdO
+mdO
+mdO
 fgV
 pGL
 jEb
@@ -29592,11 +29629,11 @@ lme
 dLz
 lme
 lme
-lme
-lme
 anL
+lme
 bxe
 bxe
+rvw
 rvw
 rvw
 gUR
@@ -29797,7 +29834,6 @@ unE
 unE
 unE
 unE
-abw
 mDK
 mDK
 unE
@@ -29807,6 +29843,7 @@ unE
 unE
 unE
 unE
+wJV
 unE
 gAU
 gbi
@@ -30000,9 +30037,9 @@ pyq
 jvV
 jvV
 pyq
-jvV
 xSY
 xSY
+pyq
 pyq
 pyq
 pyq
@@ -30822,9 +30859,9 @@ cmf
 rvw
 cmf
 cmf
-cmf
-rpY
+kFZ
 xSY
+abw
 oYw
 lme
 lme
@@ -31026,8 +31063,8 @@ lme
 lme
 lme
 lme
-cYi
 xSY
+abw
 gqC
 lme
 lme
@@ -31229,8 +31266,8 @@ lme
 uXq
 jHj
 cmf
-rpY
 xSY
+abw
 xfi
 lme
 lme
@@ -31614,7 +31651,7 @@ bdH
 cGs
 onC
 onC
-kMC
+vDF
 uQz
 pyq
 cmf
@@ -31639,7 +31676,7 @@ cmf
 pyq
 qDC
 fZJ
-rvw
+cYi
 onC
 onC
 qCK
@@ -31829,7 +31866,7 @@ cmf
 cmf
 vUD
 dyH
-nKV
+lme
 dyH
 qJr
 rpY
@@ -32030,9 +32067,9 @@ pyq
 jvV
 pyq
 pyq
-jvV
 cbA
 xSY
+pyq
 pyq
 jvV
 pyq
@@ -32233,9 +32270,9 @@ btt
 btt
 btt
 qMr
-btt
 xzb
 tBv
+qMr
 qMr
 btt
 btt
@@ -32436,9 +32473,9 @@ fnZ
 xWp
 xWp
 xbI
-xWp
 tLp
 ffZ
+lme
 kFS
 xrt
 xWp
@@ -32635,7 +32672,7 @@ iKF
 rvZ
 lme
 pGL
-syM
+pGL
 uAM
 rvw
 rzy
@@ -33045,9 +33082,9 @@ abo
 xWp
 xWp
 xWp
-xWp
 kSH
 bxe
+xWp
 xWp
 xfo
 xWp
@@ -33248,9 +33285,9 @@ aGX
 acX
 vgM
 cYs
-aGX
 kkR
 xsW
+cYs
 cYs
 aGX
 acX
@@ -33451,9 +33488,9 @@ pyq
 pyq
 pyq
 pyq
-pyq
 xSY
 aIZ
+pyq
 pyq
 pyq
 pyq
@@ -34274,8 +34311,8 @@ kMC
 cmf
 cmf
 cmf
-cmf
 xSY
+abw
 yeK
 lme
 lme
@@ -34477,8 +34514,8 @@ dgq
 liB
 liB
 liB
-liB
 xSY
+abw
 yeK
 lme
 lme
@@ -34680,8 +34717,8 @@ kMC
 cmf
 cmf
 cmf
-cmf
 xSY
+abw
 yeK
 lme
 lme
@@ -35481,9 +35518,9 @@ pyq
 pyq
 pyq
 pyq
+aIZ
+aIZ
 pyq
-aIZ
-aIZ
 pyq
 pyq
 pyq
@@ -35496,7 +35533,7 @@ pyq
 ovt
 kcO
 mdt
-lme
+xfj
 onC
 onC
 qCK
@@ -35684,10 +35721,10 @@ ugD
 alh
 wGj
 bTS
-nqb
 bvv
 lSs
 xVk
+nqb
 nqb
 alh
 wGj
@@ -35883,16 +35920,16 @@ vIW
 msu
 lme
 lme
-lme
+xfj
 ekv
 czk
-lme
 lme
 ffZ
 kdm
 lme
 rvw
-lme
+rvw
+xfj
 lme
 lme
 lme
@@ -38742,11 +38779,11 @@ tTz
 dbi
 qtd
 qtd
-mNf
-mNf
-mNf
-mNf
-mNf
+qtd
+qtd
+qtd
+qtd
+qtd
 mNf
 mNf
 mNf
@@ -38943,13 +38980,13 @@ qKz
 jCT
 tTz
 awh
+awh
+jOA
+oBz
+nRL
+syM
+oBz
 qtd
-qtd
-mNf
-mNf
-mNf
-mNf
-mNf
 mNf
 mNf
 mNf
@@ -39148,11 +39185,11 @@ tTz
 abs
 qtd
 qtd
-mNf
-mNf
-mNf
-mNf
-mNf
+oBz
+vGF
+syM
+oBz
+qtd
 mNf
 mNf
 mNf
@@ -39351,11 +39388,11 @@ uMG
 abB
 qtd
 qtd
-mNf
-mNf
-mNf
-mNf
-mNf
+oBz
+reC
+syM
+oBz
+qtd
 mNf
 mNf
 mNf
@@ -39554,11 +39591,11 @@ tTz
 qbF
 qtd
 qtd
-mNf
-mNf
-mNf
-mNf
-mNf
+oBz
+nRL
+syM
+oBz
+qtd
 mNf
 mNf
 mNf
@@ -39757,11 +39794,11 @@ aFS
 oev
 qtd
 qtd
-mNf
-mNf
-mNf
-mNf
-mNf
+qtd
+qtd
+qtd
+qtd
+qtd
 mNf
 mNf
 mNf

@@ -13,9 +13,9 @@ Format:
 endmap
 
 map almayer
-	default
+	disabled
 endmap
 
-map shrike
+map marlow
 	default
 endmap
