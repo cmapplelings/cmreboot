@@ -588,6 +588,16 @@
 	desc = "An old recruitment poster for the USCM. Looking at it floods you with a mixture of pride and sincere regret."
 	icon_state = "prop3"
 
+/obj/structure/sign/usmc
+	name = "usmc flag"
+	desc = "An ancient flag of the corps, passed down for over a century."
+	icon = 'icons/obj/structures/props/64x64.dmi'
+	icon_state = "usmcflag"
+
+/obj/structure/sign/usa
+	name = "usa flag"
+	desc = "O say, can you see?"
+	icon_state = "usa"
 
 /obj/structure/sign/catclock
 	name = "cat clock"
