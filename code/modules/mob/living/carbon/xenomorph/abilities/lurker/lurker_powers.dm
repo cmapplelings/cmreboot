@@ -94,7 +94,7 @@
 
 	to_chat(xeno, SPAN_XENODANGER("You have waited too long, your slash will no longer deal increased damage!"))
 
-
+/*
 // VAMPIRE LURKER
 
 /datum/action/xeno_action/activable/pounce/rush/additional_effects(mob/living/living_target) //pounce effects
@@ -311,3 +311,4 @@
 	log_attack("[key_name(xeno)] was executed by [key_name(target_carbon)] with a headbite!")
 	apply_cooldown()
 	return ..()
+*/

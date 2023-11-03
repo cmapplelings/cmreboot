@@ -75,6 +75,7 @@
 
 	var/buff_duration = 50
 
+/*
 // VAMP LURKER ABILITIES
 
 /datum/action/xeno_action/activable/pounce/rush
@@ -118,3 +119,4 @@
 	ability_primacy = XENO_PRIMARY_ACTION_4
 	action_type = XENO_ACTION_CLICK
 	xeno_cooldown = 10 SECONDS
+*/
