@@ -31,7 +31,8 @@ AddTimelock(/datum/job/command/bridge, list(
 	JOB_HUMAN_ROLES = 15 HOURS
 ))
 
+//edited the spawn below to make the PCDR spawn in it for now. must fix soon.
 /obj/effect/landmark/start/bridge
-	name = JOB_SO
+	name = JOB_LP_PCDR
 	icon_state = "so_spawn"
-	job = /datum/job/command/bridge
+	job = /datum/job/command/pcdr
