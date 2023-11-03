@@ -1016,7 +1016,7 @@
 	pixel_x = -7;
 	pixel_y = 1
 	},
-/obj/structure/machinery/light/small/built,
+/obj/structure/machinery/light/small,
 /turf/open/floor/almayer,
 /area/almayer/command/cichallway)
 "aeG" = (
@@ -1167,7 +1167,7 @@
 /area/almayer/squads/charlie)
 "arY" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/light/small/built{
+/obj/structure/machinery/light/small{
 	dir = 8
 	},
 /turf/open/floor/plating/plating_catwalk,
@@ -1400,7 +1400,7 @@
 /area/almayer/hallways/hangar)
 "aOK" = (
 /obj/structure/machinery/ares/processor/apollo,
-/obj/structure/machinery/light/small/built{
+/obj/structure/machinery/light/small{
 	dir = 1
 	},
 /turf/open/floor/almayer,
@@ -1440,7 +1440,7 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/almayer/hallways/hangar)
 "aUW" = (
-/obj/structure/machinery/light/small/built{
+/obj/structure/machinery/light/small{
 	dir = 8
 	},
 /turf/open/floor/plating/plating_catwalk,
@@ -2525,6 +2525,9 @@
 "dCs" = (
 /obj/structure/closet,
 /obj/item/storage/toolbox/mechanical/green,
+/obj/structure/machinery/light/small{
+	dir = 8
+	},
 /turf/open/floor/almayer,
 /area/almayer/command/cichallway)
 "dDy" = (
@@ -3069,7 +3072,7 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 10
 	},
-/obj/structure/machinery/light/small/built{
+/obj/structure/machinery/light/small{
 	dir = 1
 	},
 /turf/open/floor/almayer{
@@ -4705,9 +4708,7 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/machinery/light/small/built{
-	dir = 1
-	},
+/obj/structure/machinery/light/small,
 /turf/open/floor/plating/plating_catwalk,
 /area/almayer/command/cichallway)
 "jox" = (
@@ -4894,7 +4895,7 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/machinery/door/airlock/multi_tile/almayer/marine,
 /turf/open/floor/almayer{
-	icon_state = "plate"
+	icon_state = "test_floor4"
 	},
 /area/almayer/hull/lower_hull/l_m_p)
 "jQq" = (
@@ -5006,9 +5007,7 @@
 	},
 /area/almayer/command/telecomms)
 "kbQ" = (
-/obj/structure/machinery/light/small/built{
-	dir = 4
-	},
+/obj/structure/machinery/light/small,
 /turf/open/floor/almayer,
 /area/almayer/squads/req)
 "kcG" = (
@@ -5327,16 +5326,6 @@
 	icon_state = "sterile_green_side"
 	},
 /area/almayer/medical/lower_medical_lobby)
-"kSl" = (
-/obj/structure/platform{
-	dir = 8
-	},
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/machinery/light/small/built{
-	dir = 4
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/almayer/hallways/starboard_hallway)
 "kSx" = (
 /obj/structure/stairs{
 	dir = 4
@@ -6027,9 +6016,7 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	pixel_y = -1
 	},
-/obj/structure/machinery/light/small/built{
-	dir = 8
-	},
+/obj/structure/machinery/light/small,
 /turf/open/floor/plating/plating_catwalk,
 /area/almayer/command/cichallway)
 "mTH" = (
@@ -6339,9 +6326,7 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 5
 	},
-/obj/structure/machinery/light/small/built{
-	dir = 8
-	},
+/obj/structure/machinery/light/small,
 /turf/open/floor/almayer,
 /area/almayer/hull/lower_hull/l_m_s)
 "nDU" = (
@@ -6861,9 +6846,7 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/machinery/light/small/built{
-	dir = 1
-	},
+/obj/structure/machinery/light/small,
 /turf/open/floor/plating/plating_catwalk,
 /area/almayer/command/cichallway)
 "oZL" = (
@@ -7825,9 +7808,7 @@
 /obj/structure/pipes/vents/pump{
 	dir = 4
 	},
-/obj/structure/machinery/light/small/built{
-	dir = 8
-	},
+/obj/structure/machinery/light/small,
 /turf/open/floor/plating/plating_catwalk,
 /area/almayer/hull/lower_hull/l_m_p)
 "rDl" = (
@@ -7838,6 +7819,9 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/almayer/hull/lower_hull/l_a_p)
 "rDV" = (
+/obj/structure/machinery/light/small{
+	dir = 4
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/almayer/hallways/starboard_hallway)
 "rIH" = (
@@ -7931,14 +7915,11 @@
 	},
 /area/almayer/living/briefing)
 "rUw" = (
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 10
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer{
+	icon_state = "test_floor4"
 	},
-/obj/structure/machinery/light/small/built{
-	dir = 1
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/almayer/command/cichallway)
+/area/space)
 "saO" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/tool/hand_labeler{
@@ -8190,11 +8171,10 @@
 "sIT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/machinery/light/small/built{
-	dir = 8
+/turf/open/floor/almayer{
+	icon_state = "test_floor4"
 	},
-/turf/open/floor/plating/plating_catwalk,
-/area/almayer/command/cichallway)
+/area/almayer/hull/lower_hull/l_m_p)
 "sIY" = (
 /turf/open/floor/almayer{
 	dir = 5;
@@ -8220,6 +8200,9 @@
 "sJB" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 5
+	},
+/obj/structure/machinery/light/small{
+	dir = 8
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/almayer/command/cichallway)
@@ -10062,10 +10045,10 @@
 /obj/structure/pipes/vents/pump{
 	dir = 4
 	},
-/obj/structure/machinery/light/small/built{
+/obj/docking_port/stationary/marine_dropship/crash_site,
+/obj/structure/machinery/light/small{
 	dir = 4
 	},
-/obj/docking_port/stationary/marine_dropship/crash_site,
 /turf/open/floor/almayer{
 	dir = 4;
 	icon_state = "silver"
@@ -10347,9 +10330,6 @@
 /area/almayer/squads/charlie)
 "xqh" = (
 /obj/structure/machinery/ares/cpu,
-/obj/structure/machinery/light/small/built{
-	dir = 1
-	},
 /turf/open/floor/almayer,
 /area/almayer/command/cichallway)
 "xql" = (
@@ -40618,7 +40598,7 @@ qKz
 jCT
 ebo
 xJS
-dRe
+sIT
 jOA
 owG
 aVa
@@ -40821,7 +40801,7 @@ myO
 jCT
 aDx
 abs
-nKV
+rUw
 dbi
 hwf
 vGF
@@ -42030,7 +42010,7 @@ nHM
 vmh
 jKn
 jKn
-kSl
+jKn
 dYi
 jKn
 vlr
@@ -45259,11 +45239,11 @@ dor
 qWd
 ltU
 act
-sIT
+rMU
 rMU
 ftE
 qWd
-rUw
+pMk
 rMU
 uCb
 wDi
