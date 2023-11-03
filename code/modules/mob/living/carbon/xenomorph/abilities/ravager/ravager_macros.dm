@@ -1,3 +1,4 @@
+/*
 // Ravager macro stubs
 /datum/action/xeno_action/verb/verb_empower()
 	set category = "Alien"
@@ -61,3 +62,4 @@
 	set hidden = TRUE
 	var/action_name = "Spike Shed (50 shards)"
 	handle_xeno_macro(src, action_name)
+*/

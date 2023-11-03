@@ -1,4 +1,4 @@
-
+/*
 // Rav charge
 /datum/action/xeno_action/activable/pounce/charge
 	name = "Charge"
@@ -156,5 +156,4 @@
 	var/shard_cost = 50
 	var/ammo_type = /datum/ammo/xeno/bone_chips/spread
 	var/shrapnel_amount = 40
-
-
+*/

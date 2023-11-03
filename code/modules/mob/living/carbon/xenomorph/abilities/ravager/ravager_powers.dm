@@ -1,4 +1,4 @@
-
+/*
 ////////// BASE RAV POWERS
 
 /datum/action/xeno_action/onclick/empower/use_ability(atom/target)
@@ -583,3 +583,4 @@
 		return TRUE
 	else
 		return FALSE
+*/

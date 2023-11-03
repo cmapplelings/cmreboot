@@ -1,3 +1,4 @@
+/*
 /datum/caste_datum/ravager
 	caste_type = XENO_CASTE_RAVAGER
 	tier = 3
@@ -108,3 +109,4 @@
 		QDEL_NULL(rav_shield)
 		to_chat(bound_xeno, SPAN_XENODANGER("You feel your shield decay!"))
 		bound_xeno.overlay_shields()
+*/
