@@ -560,15 +560,11 @@
 	name = "\improper Medical Lower Lobby"
 	icon_state = "medical"
 	fake_zlevel = 2 // lowerdeck
-	soundscape_playlist = SCAPE_PL_ELEVATOR_MUSIC
-	soundscape_interval = 120
 
 /area/almayer/medical/upper_medical
 	name = "\improper Medical Upper"
 	icon_state = "medical"
 	fake_zlevel = 1 // upperdeck
-	soundscape_playlist = SCAPE_PL_ELEVATOR_MUSIC
-	soundscape_interval = 120
 
 /area/almayer/medical/morgue
 	name = "\improper Morgue"
@@ -579,29 +575,21 @@
 	name = "\improper Medical Operating Room 1"
 	icon_state = "operating"
 	fake_zlevel = 2 // lowerdeck
-	soundscape_playlist = SCAPE_PL_ELEVATOR_MUSIC
-	soundscape_interval = 120
 
 /area/almayer/medical/operating_room_two
 	name = "\improper Medical Operating Room 2"
 	icon_state = "operating"
 	fake_zlevel = 2 // lowerdeck
-	soundscape_playlist = SCAPE_PL_ELEVATOR_MUSIC
-	soundscape_interval = 120
 
 /area/almayer/medical/operating_room_three
 	name = "\improper Medical Operating Room 3"
 	icon_state = "operating"
 	fake_zlevel = 2 // lowerdeck
-	soundscape_playlist = SCAPE_PL_ELEVATOR_MUSIC
-	soundscape_interval = 120
 
 /area/almayer/medical/operating_room_four
 	name = "\improper Medical Operating Room 4"
 	icon_state = "operating"
 	fake_zlevel = 2 // lowerdeck
-	soundscape_playlist = SCAPE_PL_ELEVATOR_MUSIC
-	soundscape_interval = 120
 
 /area/almayer/medical/medical_science
 	name = "\improper Medical Research laboratories"
@@ -646,15 +634,11 @@
 	name = "\improper Medical Cryogenics Tubes"
 	icon_state = "medical"
 	fake_zlevel = 2 // lowerdeck
-	soundscape_playlist = SCAPE_PL_ELEVATOR_MUSIC
-	soundscape_interval = 120
 
 /area/almayer/medical/lower_medical_medbay
 	name = "\improper Medical Lower Medbay"
 	icon_state = "medical"
 	fake_zlevel = 2 // lowerdeck
-	soundscape_playlist = SCAPE_PL_ELEVATOR_MUSIC
-	soundscape_interval = 120
 
 /area/almayer/squads/alpha
 	name = "\improper Squad Alpha Preparation"
