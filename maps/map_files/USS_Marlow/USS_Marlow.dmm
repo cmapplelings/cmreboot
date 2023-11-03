@@ -3856,6 +3856,21 @@
 	},
 /turf/open/floor/almayer,
 /area/almayer/command/cichallway)
+"hlb" = (
+/obj/structure/closet/crate/ammo,
+/obj/item/mortar_shell/flare,
+/obj/item/mortar_shell/flare,
+/obj/item/mortar_shell/flare,
+/obj/item/mortar_shell/flare,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/he,
+/obj/item/mortar_shell/he,
+/obj/item/mortar_shell/incendiary,
+/obj/item/mortar_shell/incendiary,
+/obj/item/mortar_kit,
+/turf/open/floor/almayer,
+/area/almayer/squads/req)
 "hmg" = (
 /obj/effect/landmark/observer_start,
 /turf/open/floor/almayer/uscm/directional{
@@ -44451,7 +44466,7 @@ xYN
 ikP
 qyY
 aeG
-llX
+hlb
 llX
 aeG
 aeG
