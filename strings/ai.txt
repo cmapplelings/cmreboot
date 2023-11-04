@@ -104,7 +104,6 @@ SEN 5241
 SHODAN
 SID 6.7
 Setaur
-Shrike
 Solo
 Speedy
 Super 17
