@@ -24,7 +24,7 @@
 					var/damage = rand(3,5)
 					I.take_damage(damage)
 					pain.apply_pain(damage * PAIN_ORGAN_DAMAGE_MULTIPLIER)
-				if(E.is_broken() && prob(2) && E.internal_organs)
+				if(E.is_broken() && prob(2))
 					var/damage = rand(3,5)
 					var/datum/wound/internal_bleeding/internal_bleed = new
 					E.add_bleeding(internal_bleed, TRUE, damage)

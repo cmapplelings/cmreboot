@@ -186,7 +186,7 @@
 			var/obj/limb/limb = linked_dummy.get_limb(selection)
 			if (!istype(limb))
 				return
-			if(limb.status & LIMB_DESTROYED || !(limb.internal_organs))
+			if(limb.status & LIMB_DESTROYED)
 				return
 			if(linked_dummy.get_limb(selection).status & LIMB_DESTROYED)
 				return

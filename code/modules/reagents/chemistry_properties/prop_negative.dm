@@ -249,7 +249,7 @@
 		return
 	var/mob/living/carbon/human/H = M
 	var/obj/limb/L = pick(H.limbs)
-	if(!L || L.status & (LIMB_ROBOT|LIMB_SYNTHSKIN) || !(L.internal_organs))
+	if(!L || L.status & (LIMB_ROBOT|LIMB_SYNTHSKIN))
 		return
 	..()
 	if(prob(POTENCY_MULTIPLIER_VHIGH * potency))
