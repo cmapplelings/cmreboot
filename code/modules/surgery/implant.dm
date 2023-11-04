@@ -129,7 +129,7 @@
 
 	log_interact(user, target, "[key_name(user)] put \the [tool] inside [key_name(target)]'s [surgery.affected_limb.cavity].")
 
-	if(tool.w_class >= SIZE_SMALL && affected_limb.internal_organs)
+	if(tool.w_class >= SIZE_SMALL && surgery.affected_limb.internal_organs)
 		to_chat(user, SPAN_WARNING("You tear some blood vessels trying to fit such a bulky object in the cavity."))
 		log_interact(user, target, "[key_name(user)] damaged some blood vessels while putting \the [tool] inside [key_name(target)]'s [surgery.affected_limb.cavity].")
 
