@@ -1,4 +1,3 @@
-/*
 ////////// BASE RAV POWERS
 
 /datum/action/xeno_action/onclick/empower/use_ability(atom/target)
@@ -223,7 +222,7 @@
 	apply_cooldown()
 	return ..()
 
-
+/*
 ///////////// BERSERKER POWERS
 
 /datum/action/xeno_action/onclick/apprehend/use_ability(atom/A)
@@ -435,7 +434,7 @@
 	xeno.update_canmove()
 
 	return ..()
-
+*/
 
 ////////// HEDGEHOG POWERS
 
@@ -583,4 +582,3 @@
 		return TRUE
 	else
 		return FALSE
-*/
