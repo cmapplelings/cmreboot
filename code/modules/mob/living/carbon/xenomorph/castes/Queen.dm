@@ -24,7 +24,7 @@
 	evolution_allowed = FALSE
 	fire_immunity = FIRE_IMMUNITY_NO_DAMAGE|FIRE_IMMUNITY_NO_IGNITE
 	caste_desc = "The biggest and baddest xeno. The Queen controls the hive and plants eggs"
-	spit_types = list(/datum/ammo/xeno/toxin/queen, /datum/ammo/xeno/acid/spatter)
+	spit_types = list(/datum/ammo/xeno/toxin, /datum/ammo/xeno/acid/spatter)
 	can_hold_facehuggers = 0
 	can_hold_eggs = CAN_HOLD_ONE_HAND
 	acid_level = 2
@@ -285,6 +285,7 @@
 
 	base_actions = list(
 		/datum/action/xeno_action/onclick/xeno_resting,
+		/datum/action/xeno_action/activable/fling,
 		/datum/action/xeno_action/onclick/regurgitate,
 		/datum/action/xeno_action/watch_xeno,
 		/datum/action/xeno_action/activable/tail_stab,

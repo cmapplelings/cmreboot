@@ -28,17 +28,17 @@
 	if(!(src in mobs_in_view))
 		return
 	var/dist = get_dist(queen, src)
-	if(dist <= 4)
+	if(dist <= 7)
 		to_chat(src, SPAN_DANGER("An ear-splitting guttural roar shakes the ground beneath your feet!"))
-		adjust_effect(4, STUN)
-		apply_effect(4, WEAKEN)
+		/*adjust_effect(4, STUN)
+		apply_effect(4, WEAKEN)*/ //No stun for lowpop
 		if(!ear_deaf || !HAS_TRAIT(src, TRAIT_EAR_PROTECTION))
 			AdjustEarDeafness(5) //Deafens them temporarily
-	else if(dist >= 5 && dist < 7)
-		adjust_effect(3, STUN)
+/*	else if(dist >= 5 && dist < 7)
+		adjust_effect(3, STUN) No stun for lowpop
 		if(!ear_deaf || !HAS_TRAIT(src, TRAIT_EAR_PROTECTION))
 			AdjustEarDeafness(2)
-		to_chat(src, SPAN_DANGER("The roar shakes your body to the core, freezing you in place!"))
+		to_chat(src, SPAN_DANGER("The roar shakes your body to the core, freezing you in place!"))*/
 
 ///Checks if something prevents sharp objects from interacting with the mob (such as armor blocking surgical tools / surgery)
 /mob/living/carbon/proc/get_sharp_obj_blocker(obj/limb/limb)

@@ -28,9 +28,23 @@
 	ability_name = "xenomorph heal"
 	plasma_cost = 600
 	macro_path = /datum/action/xeno_action/verb/verb_heal_xeno
-	ability_primacy = XENO_PRIMARY_ACTION_1
 	action_type = XENO_ACTION_CLICK
 	xeno_cooldown = 8 SECONDS
+
+// Queen Fling
+/datum/action/xeno_action/activable/fling/queen
+	name = "Fling"
+	action_icon_state = "fling"
+	ability_name = "Fling"
+	macro_path = /datum/action/xeno_action/verb/verb_fling
+	action_type = XENO_ACTION_CLICK
+	ability_primacy = XENO_PRIMARY_ACTION_1
+	xeno_cooldown = 15 SECONDS
+	// Configurables
+	fling_distance = 4
+	stun_power = 0
+	weaken_power = 0.5
+	slowdown = 8
 
 /datum/action/xeno_action/activable/expand_weeds
 	name = "Expand Weeds (50)"
