@@ -13,6 +13,21 @@
 	ambience_exterior = AMBIENCE_ALMAYER
 	ceiling_muffle = FALSE
 
+	///Whether this area is used for hijack evacuation progress
+	var/hijack_evacuation_area = FALSE
+
+	///The weight this area gives towards hijack evacuation progress
+	var/hijack_evacuation_weight = 0
+
+	///Whether this area is additive or multiplicative towards evacuation progress
+	var/hijack_evacuation_type = EVACUATION_TYPE_NONE
+
+/area/almayer/Initialize(mapload, ...)
+	. = ..()
+
+	if(hijack_evacuation_area)
+		SShijack.progress_areas[src] = power_equip
+
 /area/shuttle/almayer/elevator_maintenance/upperdeck
 	name = "\improper Maintenance Elevator"
 	icon_state = "shuttle"
@@ -160,6 +175,9 @@
 	fake_zlevel = 2 // lowerdeck
 	soundscape_playlist = SCAPE_PL_ENG
 	soundscape_interval = 15
+	hijack_evacuation_area = TRUE
+	hijack_evacuation_weight = 0.2
+	hijack_evacuation_type = EVACUATION_TYPE_ADDITIVE
 
 /area/almayer/engineering/starboard_atmos
 	name = "\improper Atmospherics Starboard"
@@ -183,6 +201,9 @@
 	name = "\improper Astronavigational Deck"
 	icon_state = "astronavigation"
 	fake_zlevel = 2 // lowerdeck
+	hijack_evacuation_area = TRUE
+	hijack_evacuation_weight = 1.1
+	hijack_evacuation_type = EVACUATION_TYPE_MULTIPLICATIVE
 
 /area/almayer/shipboard/panic
 	name = "\improper Hangar Panic Room"
@@ -560,15 +581,11 @@
 	name = "\improper Medical Lower Lobby"
 	icon_state = "medical"
 	fake_zlevel = 2 // lowerdeck
-	soundscape_playlist = SCAPE_PL_ELEVATOR_MUSIC
-	soundscape_interval = 120
 
 /area/almayer/medical/upper_medical
 	name = "\improper Medical Upper"
 	icon_state = "medical"
 	fake_zlevel = 1 // upperdeck
-	soundscape_playlist = SCAPE_PL_ELEVATOR_MUSIC
-	soundscape_interval = 120
 
 /area/almayer/medical/morgue
 	name = "\improper Morgue"
@@ -579,29 +596,21 @@
 	name = "\improper Medical Operating Room 1"
 	icon_state = "operating"
 	fake_zlevel = 2 // lowerdeck
-	soundscape_playlist = SCAPE_PL_ELEVATOR_MUSIC
-	soundscape_interval = 120
 
 /area/almayer/medical/operating_room_two
 	name = "\improper Medical Operating Room 2"
 	icon_state = "operating"
 	fake_zlevel = 2 // lowerdeck
-	soundscape_playlist = SCAPE_PL_ELEVATOR_MUSIC
-	soundscape_interval = 120
 
 /area/almayer/medical/operating_room_three
 	name = "\improper Medical Operating Room 3"
 	icon_state = "operating"
 	fake_zlevel = 2 // lowerdeck
-	soundscape_playlist = SCAPE_PL_ELEVATOR_MUSIC
-	soundscape_interval = 120
 
 /area/almayer/medical/operating_room_four
 	name = "\improper Medical Operating Room 4"
 	icon_state = "operating"
 	fake_zlevel = 2 // lowerdeck
-	soundscape_playlist = SCAPE_PL_ELEVATOR_MUSIC
-	soundscape_interval = 120
 
 /area/almayer/medical/medical_science
 	name = "\improper Medical Research laboratories"
@@ -646,15 +655,11 @@
 	name = "\improper Medical Cryogenics Tubes"
 	icon_state = "medical"
 	fake_zlevel = 2 // lowerdeck
-	soundscape_playlist = SCAPE_PL_ELEVATOR_MUSIC
-	soundscape_interval = 120
 
 /area/almayer/medical/lower_medical_medbay
 	name = "\improper Medical Lower Medbay"
 	icon_state = "medical"
 	fake_zlevel = 2 // lowerdeck
-	soundscape_playlist = SCAPE_PL_ELEVATOR_MUSIC
-	soundscape_interval = 120
 
 /area/almayer/squads/alpha
 	name = "\improper Squad Alpha Preparation"
@@ -712,6 +717,9 @@
 	icon_state = "lifeboat_pump"
 	requires_power = 1
 	fake_zlevel = 1
+	hijack_evacuation_area = TRUE
+	hijack_evacuation_weight = 0.1
+	hijack_evacuation_type = EVACUATION_TYPE_ADDITIVE
 
 /area/almayer/lifeboat_pumps/north1
 	name = "North West Lifeboat Fuel Pump"

@@ -11,6 +11,7 @@
 #define SQUAD_MARINE_CRYO "Foxtrot"
 #define SQUAD_MARINE_INTEL "Intel"
 #define SQUAD_SOF "SOF"
+#define SQUAD_CBRN "CBRN"
 
 // Job name defines
 #define JOB_SQUAD_MARINE "Rifleman"
@@ -52,8 +53,8 @@ var/global/list/job_squad_roles = JOB_SQUAD_ROLES_LIST
 #define LOWEST_SPAWN_PRIORITY 5
 
 #define JOB_CMO "Chief Medical Officer"
-#define JOB_DOCTOR "Doctor"
-#define JOB_SURGEON "Surgeon"
+#define JOB_DOCTOR "Military Doctor"
+#define JOB_SURGEON "Military Surgeon"
 
 #define JOB_NURSE "Nurse"
 #define JOB_RESEARCHER "Researcher"
@@ -98,7 +99,7 @@ var/global/list/job_command_roles = JOB_COMMAND_ROLES_LIST
 #define JOB_ENGINEER_ROLES_LIST  list(JOB_SQUAD_ENGI, JOB_MAINT_TECH, JOB_ORDNANCE_TECH, JOB_CHIEF_ENGINEER)
 
 #define JOB_CHIEF_REQUISITION "Quartermaster"
-#define JOB_CARGO_TECH "Cargo Technician"
+#define JOB_CARGO_TECH "Armorer"
 #define JOB_REQUISITION_ROLES    /datum/timelock/requisition
 #define JOB_REQUISITION_ROLES_LIST   list(JOB_CHIEF_REQUISITION, JOB_CARGO_TECH)
 
@@ -171,25 +172,25 @@ var/global/list/job_command_roles = JOB_COMMAND_ROLES_LIST
 //--------LOWPOP------//
 //Command Roles
 #define JOB_LP_CO 	"Commanding Officer"
-#define JOB_LP_SO 	"Senior Officer"
-#define JOB_LP_PCDR 	"Platoon Commander"
+#define JOB_LP_SO 	"Executive Officer"
+#define JOB_LP_PCDR "Platoon Commander"
 #define JOB_LP_JO 	"Junior Officer"
 
 //Platoon roles
-#define JOB_LP_PST 	"Platoon Sergeant"
+#define JOB_LP_PSGT "Platoon Sergeant"
 #define JOB_LP_RTO 	"Radio Telephone Operator"		//Unused for now
-#define JOB_LP_PE 	"Platoon Engineer"
+#define JOB_LP_PE 	"Platoon Engineer"				//Unused for now
 
 //Squad Roles
-#define JOB_LP_SL	"Squad Leader"
-#define JOB_LP_SST 	"Squad Support Technician"
-#define JOB_LP_SG 	"Squad Smartgunner"
-#define JOB_LP_MED	"Squad Medic"
-#define JOB_LP_MAR 	"Squad Marine"
+#define JOB_LP_SQUAD_LEADER				"Squad Leader"
+#define JOB_LP_SQUAD_ENGI 				"Squad Combat Technician"
+#define JOB_LP_SQUAD_SMARTGUN 			"Squad Smartgunner"
+#define JOB_LP_SQUAD_MEDIC				"Squad Hospital Corpsman"
+#define JOB_LP_SQUAD_MARINE			 	"Squad Marine"
 
 //Support Roles
-#define JOB_LP_DOC	"Military Surgeon"
-#define JOB_LP_QM	"Quartermaster"
+#define JOB_LP_DOCTOR	"Military Doctor"
+#define JOB_LP_CARGO_TECH "Armorer"
 
 
 

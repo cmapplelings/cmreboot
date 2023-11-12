@@ -25,7 +25,7 @@
 
 	switch(age)
 		if(XENO_YOUNG)
-			age_prefix = "Young "
+			age_prefix = "" //Null while timelocks are off
 		if(XENO_NORMAL)
 			age_prefix = ""
 		if(XENO_MATURE)

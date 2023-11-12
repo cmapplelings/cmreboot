@@ -80,7 +80,7 @@
 		ambience = target_ambience
 
 
-	S.volume = 100 * owner.volume_preferences[VOLUME_AMB]
+	S.volume = 100		//You don't get to change it today
 	S.status = status_flags
 
 	if(target_area)

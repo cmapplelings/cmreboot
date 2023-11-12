@@ -84,6 +84,11 @@
 	role_comm_title = "Doc"
 	skills = /datum/skills/doctor
 
+/datum/equipment_preset/uscm_ship/uscm_medical/doctor/lowpop
+	name = "USCM Military Doctor"
+	assignment = JOB_LP_DOCTOR
+	rank = JOB_LP_DOCTOR
+
 	minimap_icon = list("medic" = MINIMAP_ICON_COLOR_DOCTOR)
 
 /datum/equipment_preset/uscm_ship/uscm_medical/doctor/load_gear(mob/living/carbon/human/new_human)

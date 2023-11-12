@@ -570,7 +570,7 @@
 
 /obj/structure/sign/ROsign
 	name = "\improper USCM Requisitions Office Guidelines"
-	desc = " 1. You are not entitled to service or equipment. Attachments are a privilege, not a right.\n 2. You must be fully dressed to obtain service. Cyrosleep underwear is non-permissible.\n 3. The Requsitions Officer has the final say and the right to decline service. Only the Acting Commanding Officer may override their decisions.\n 4. Please treat your Requsitions staff with respect. They work hard."
+	desc = " 1. You are not entitled to service or equipment. Attachments are a privilege, not a right.\n 2. You must be fully dressed to obtain service. Cryosleep underwear is non-permissible.\n 3. The Quartermaster has the final say and the right to decline service. Only the Acting Commanding Officer may override their decisions.\n 4. Please treat your Requsitions staff with respect. They work hard."
 	icon_state = "roplaque"
 
 /obj/structure/sign/prop1
@@ -588,6 +588,16 @@
 	desc = "An old recruitment poster for the USCM. Looking at it floods you with a mixture of pride and sincere regret."
 	icon_state = "prop3"
 
+/obj/structure/sign/usmc
+	name = "usmc flag"
+	desc = "An ancient flag of the corps, passed down for over a century."
+	icon = 'icons/obj/structures/props/64x64.dmi'
+	icon_state = "usmcflag"
+
+/obj/structure/sign/usa
+	name = "usa flag"
+	desc = "O say, can you see?"
+	icon_state = "usa"
 
 /obj/structure/sign/catclock
 	name = "cat clock"

@@ -20,6 +20,12 @@
 	/// If this job is a doctor variant of the doctor role
 	var/doctor = TRUE
 
+/datum/job/civilian/doctor/lowpop
+	title = JOB_LP_DOCTOR
+	total_positions = 2
+	spawn_positions = 2
+	gear_preset = /datum/equipment_preset/uscm_ship/uscm_medical/doctor/lowpop
+
 //check the job option. and change the gear preset
 /datum/job/civilian/doctor/handle_job_options(option)
 	if(option != SURGEON_VARIANT)
