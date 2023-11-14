@@ -80,7 +80,7 @@
 		ambience = target_ambience
 
 
-	S.volume = 100		//You don't get to change it today
+	S.volume = 70		//You don't get to change it today
 	S.status = status_flags
 
 	if(target_area)
