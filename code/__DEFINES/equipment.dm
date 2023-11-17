@@ -458,6 +458,7 @@ GLOBAL_LIST_INIT(slot_to_contained_sprite_shorthand, list(
 #define ACCESSORY_SLOT_RANK "Rank"
 #define ACCESSORY_SLOT_DECOR "Decor"
 #define ACCESSORY_SLOT_MEDAL "Medal"
+#define ACCESSORY_SLOT_ARMORSTORAGE "Armor straps"
 #define ACCESSORY_SLOT_PONCHO "Ponchos"
 
 /// Used for uniform armor inserts.
@@ -465,7 +466,6 @@ GLOBAL_LIST_INIT(slot_to_contained_sprite_shorthand, list(
 
 #define ACCESSORY_SLOT_ARMOR_A "Arm armor"
 #define ACCESSORY_SLOT_ARMOR_L "Leg armor"
-#define ACCESSORY_SLOT_ARMOR_S "Armor storage"
 #define ACCESSORY_SLOT_ARMOR_M "Misc armor"
 #define ACCESSORY_SLOT_HELM_C "Helmet cover"
 //=================================================

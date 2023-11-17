@@ -85,14 +85,9 @@
 		list("Shoulder Holster", round(max(1,(scale * 0.5))), /obj/item/clothing/accessory/storage/holster, VENDOR_ITEM_REGULAR),
 
 		list("ARMOR", -1, null, null),
-		list("M3 Pattern Carrier Marine Armor", round(scale * 15), /obj/item/clothing/suit/storage/marine/carrier, VENDOR_ITEM_REGULAR),
-		list("M3 Pattern Padded Marine Armor", round(scale * 15), /obj/item/clothing/suit/storage/marine/padded, VENDOR_ITEM_REGULAR),
-		list("M3 Pattern Padless Marine Armor", round(scale * 15), /obj/item/clothing/suit/storage/marine/padless, VENDOR_ITEM_REGULAR),
-		list("M3 Pattern Ridged Marine Armor", round(scale * 15), /obj/item/clothing/suit/storage/marine/padless_lines, VENDOR_ITEM_REGULAR),
-		list("M3 Pattern Skull Marine Armor", round(scale * 15), /obj/item/clothing/suit/storage/marine/skull, VENDOR_ITEM_REGULAR),
-		list("M3 Pattern Smooth Marine Armor", round(scale * 15), /obj/item/clothing/suit/storage/marine/smooth, VENDOR_ITEM_REGULAR),
-		list("M3-EOD Pattern Heavy Armor", round(scale * 10), /obj/item/clothing/suit/storage/marine/heavy, VENDOR_ITEM_REGULAR),
-		list("M3-L Pattern Light Armor", round(scale * 10), /obj/item/clothing/suit/storage/marine/light, VENDOR_ITEM_REGULAR),
+		list("M3 Pattern Medium Marine Armor", round(scale * 15), /obj/item/clothing/suit/marine, VENDOR_ITEM_REGULAR),
+		list("M3-EOD Pattern Heavy Armor", round(scale * 10), /obj/item/clothing/suit/marine/heavy, VENDOR_ITEM_REGULAR),
+		list("M3-L Pattern Light Armor", round(scale * 10), /obj/item/clothing/suit/marine/light, VENDOR_ITEM_REGULAR),
 
 		list("BACKPACK", -1, null, null, null),
 		list("Lightweight IMP Backpack", round(scale * 15), /obj/item/storage/backpack/marine, VENDOR_ITEM_REGULAR),
@@ -108,6 +103,11 @@
 		list("USCM Technician Welderpack", round(scale * 1.25), /obj/item/storage/backpack/marine/engineerpack, VENDOR_ITEM_REGULAR),
 		list("Technician Welder-Satchel", round(scale * 2), /obj/item/storage/backpack/marine/engineerpack/satchel, VENDOR_ITEM_REGULAR),
 		list("Radio Telephone Backpack", round(max(1,(scale * 0.5))), /obj/item/storage/backpack/marine/satchel/rto, VENDOR_ITEM_REGULAR),
+
+		list("ARMOR STORAGE STRAPS", -1, null, null),
+		list("General Storage Armor Straps", round(scale * 15), /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", round(scale * 15), /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", round(scale * 15), /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("BELTS", -1, null, null),
 		list("M276 Pattern Ammo Load Rig", round(scale * 15), /obj/item/storage/belt/marine, VENDOR_ITEM_REGULAR),
@@ -351,20 +351,18 @@
 //------------ESSENTIAL SETS---------------
 /obj/effect/essentials_set/random/uscm_light_armor
 	spawned_gear_list = list(
-		/obj/item/clothing/suit/storage/marine/light/padded,
-		/obj/item/clothing/suit/storage/marine/light/padless,
-		/obj/item/clothing/suit/storage/marine/light/padless_lines,
-		/obj/item/clothing/suit/storage/marine/light/carrier,
-		/obj/item/clothing/suit/storage/marine/light/skull,
-		/obj/item/clothing/suit/storage/marine/light/smooth,
+		/obj/item/clothing/suit/marine/light/padded,
+		/obj/item/clothing/suit/marine/light/padless,
+		/obj/item/clothing/suit/marine/light/padless_lines,
+		/obj/item/clothing/suit/marine/light/skull,
+		/obj/item/clothing/suit/marine/light/smooth,
 	)
 
 /obj/effect/essentials_set/random/uscm_heavy_armor
 	spawned_gear_list = list(
-		/obj/item/clothing/suit/storage/marine/heavy/padded,
-		/obj/item/clothing/suit/storage/marine/heavy/padless,
-		/obj/item/clothing/suit/storage/marine/heavy/padless_lines,
-		/obj/item/clothing/suit/storage/marine/heavy/carrier,
-		/obj/item/clothing/suit/storage/marine/heavy/skull,
-		/obj/item/clothing/suit/storage/marine/heavy/smooth,
+		/obj/item/clothing/suit/marine/heavy/padded,
+		/obj/item/clothing/suit/marine/heavy/padless,
+		/obj/item/clothing/suit/marine/heavy/padless_lines,
+		/obj/item/clothing/suit/marine/heavy/skull,
+		/obj/item/clothing/suit/marine/heavy/smooth,
 	)
