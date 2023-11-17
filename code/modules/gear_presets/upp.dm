@@ -75,7 +75,7 @@
 	//body
 	var/obj/item/clothing/under/marine/veteran/UPP/UPP = new()
 	new_human.equip_to_slot_or_del(UPP, WEAR_BODY)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/faction/UPP, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars, WEAR_IN_JACKET)
 	//limbs
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/upp, WEAR_FEET)
@@ -155,6 +155,11 @@
 
 		list("HELMET", 0, null, null, null),
 		list("UM4 Helmet", 0, /obj/item/clothing/head/helmet/marine/veteran/UPP, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_MANDATORY),
+
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("BELT (CHOOSE 1)", 0, null, null, null),
 		list("Type 41 Ammo Load Rig", 0, /obj/item/storage/belt/marine/upp, MARINE_CAN_BUY_BELT, VENDOR_ITEM_RECOMMENDED),
@@ -250,7 +255,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/uppcap, WEAR_HEAD)
 	//body
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/veteran/UPP/medic, WEAR_BODY)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/faction/UPP/support, WEAR_JACKET) //medic should move fast
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP/support, WEAR_JACKET) //medic should move fast
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/smg/bizon/upp, WEAR_J_STORE)
 	//waist
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/medical/lifesaver/upp/full, WEAR_WAIST)
@@ -286,6 +291,12 @@
 		list("HELMET (CHOOSE 1)", 0, null, null, null),
 		list("Armored Cap", 0, /obj/item/clothing/head/uppcap, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
 		list("UM4 Helmet", 0, /obj/item/clothing/head/helmet/marine/veteran/UPP, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
+
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Medical Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/med, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("BELT", 0, null, null, null),
 		list("Type 41 Lifesaver Bag", 0, /obj/item/storage/belt/medical/lifesaver/upp/full, MARINE_CAN_BUY_BELT, VENDOR_ITEM_MANDATORY),
@@ -422,7 +433,7 @@
 	var/obj/item/clothing/accessory/storage/tool_webbing/equipped/W = new()
 	UPP.attach_accessory(new_human, W)
 	new_human.equip_to_slot_or_del(UPP, WEAR_BODY)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/faction/UPP, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/type71/sapper, WEAR_J_STORE)
 	//waist
@@ -449,6 +460,12 @@
 		list("HELMET (CHOOSE 1)", 0, null, null, null),
 		list("Armored Cap", 0, /obj/item/clothing/head/uppcap, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
 		list("UM4 Helmet", 0, /obj/item/clothing/head/helmet/marine/veteran/UPP, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
+
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Tool Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/engi, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("BELT (Choose 1)", 0, null, null, null),
 		list("Type 41 Ammo Load Rig", 0, /obj/item/storage/belt/marine/upp, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
@@ -548,7 +565,7 @@
 	//body
 	var/obj/item/clothing/under/marine/veteran/UPP/UPP = new()
 	new_human.equip_to_slot_or_del(UPP, WEAR_BODY)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/faction/UPP/heavy, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP/heavy, WEAR_JACKET)
 	//limbs
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/upp, WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/veteran/upp, WEAR_HANDS)
@@ -586,6 +603,11 @@
 
 		list("HELMET", 0, null, null, null),
 		list("UM7 Helmet", 0, /obj/item/clothing/head/helmet/marine/veteran/UPP/heavy, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_MANDATORY),
+
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("BELT (CHOOSE 1)", 0, null, null, null),
 		list("Type 41 Ammo Load Rig", 0, /obj/item/storage/belt/marine/upp, MARINE_CAN_BUY_BELT, VENDOR_ITEM_RECOMMENDED),
@@ -675,7 +697,7 @@
 	//body
 	var/obj/item/clothing/under/marine/veteran/UPP/UPP = new()
 	new_human.equip_to_slot_or_del(UPP, WEAR_BODY)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/faction/UPP/heavy, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP/heavy, WEAR_JACKET)
 	//limbs
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/upp, WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/veteran/upp, WEAR_HANDS)
@@ -711,6 +733,11 @@
 
 		list("HELMET", 0, null, null, null),
 		list("UM7 Helmet", 0, /obj/item/clothing/head/helmet/marine/veteran/UPP/heavy, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_MANDATORY),
+
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("BELT (CHOOSE 1)", 0, null, null, null),
 		list("Type 41 Ammo Load Rig", 0, /obj/item/storage/belt/marine/upp, MARINE_CAN_BUY_BELT, VENDOR_ITEM_RECOMMENDED),
@@ -810,7 +837,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/type71, WEAR_IN_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/type71/ap, WEAR_IN_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/type71/ap, WEAR_IN_ACCESSORY)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/faction/UPP/heavy, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP/heavy, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/type71/flamer, WEAR_J_STORE)
 	//waist
@@ -848,6 +875,13 @@
 		list("HELMET (CHOOSE 1)", 0, null, null, null),
 		list("Armored Beret", 0, /obj/item/clothing/head/uppcap/beret, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
 		list("UM4 Helmet", 0, /obj/item/clothing/head/helmet/marine/veteran/UPP, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
+
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Medical Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/med, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Tool Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/engi, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("BELT (CHOOSE 1)", 0, null, null, null),
 		list("Type 41 Ammo Load Rig", 0, /obj/item/storage/belt/marine/upp, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
@@ -967,7 +1001,7 @@
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/veteran/UPP/mp, WEAR_BODY)
 	//jacket
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/faction/UPP/mp, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP/mp, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/type47/revolver, WEAR_J_STORE)
 	//waist
@@ -999,6 +1033,11 @@
 		list("ARMOR (CHOOSE 1)", 0, null, null, null),
 		list("UL4 camouflaged jacket", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/mp, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
 		list("UL6 Personal Armor", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/support, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("BELT (CHOOSE 1)", 0, null, null, null),
 		list("Type 41 Ammo Load Rig", 0, /obj/item/storage/belt/marine/upp, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
@@ -1127,7 +1166,7 @@
 		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/type71/ap, WEAR_IN_ACCESSORY)
 
 	//jacket
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/faction/UPP/officer, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP/officer, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/stack/medical/bruise_pack, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/type71/flamer/leader, WEAR_J_STORE)
@@ -1163,6 +1202,13 @@
 		list("ARMOR (CHOOSE 1)", 0, null, null, null),
 		list("UL4 officer jacket", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/officer, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
 		list("UL6 Personal Armor", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/support, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Medical Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/med, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Tool Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/engi, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("BELT (CHOOSE 1)", 0, null, null, null),
 		list("Type 41 Ammo Load Rig", 0, /obj/item/storage/belt/marine/upp, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
@@ -1287,7 +1333,7 @@
 		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/type71/ap, WEAR_IN_ACCESSORY)
 
 	//jacket
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/faction/UPP/officer, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP/officer, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/stack/medical/bruise_pack, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/type71/flamer/leader, WEAR_J_STORE)
@@ -1323,6 +1369,13 @@
 		list("ARMOR (CHOOSE 1)", 0, null, null, null),
 		list("UL4 officer jacket", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/officer, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
 		list("UL6 Personal Armor", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/support, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Medical Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/med, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Tool Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/engi, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("BELT (CHOOSE 1)", 0, null, null, null),
 		list("Type 41 Ammo Load Rig", 0, /obj/item/storage/belt/marine/upp, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
@@ -1448,7 +1501,7 @@
 		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/type71/ap, WEAR_IN_ACCESSORY)
 
 	//jacket
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/faction/UPP/kapitan, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP/kapitan, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/stack/medical/bruise_pack, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/type71/flamer/leader, WEAR_J_STORE)
@@ -1482,8 +1535,15 @@
 		list("UM4 Helmet", 0, /obj/item/clothing/head/helmet/marine/veteran/UPP, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_RECOMMENDED),
 
 		list("ARMOR (CHOOSE 1)", 0, null, null, null),
-		list("UL4 senior officer jacket", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/kapitan, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
-		list("UL6 Personal Armor", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/support, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+		list("UL4 senior officer jacket", 0, /obj/item/clothing/suit/marine/faction/UPP/kapitan, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
+		list("UL6 Personal Armor", 0, /obj/item/clothing/suit/marine/faction/UPP/support, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Medical Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/med, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Tool Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/engi, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("BELT (CHOOSE 1)", 0, null, null, null),
 		list("Type 41 Ammo Load Rig", 0, /obj/item/storage/belt/marine/upp, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
@@ -1609,7 +1669,7 @@
 		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/type71/ap, WEAR_IN_ACCESSORY)
 
 	//jacket
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/faction/UPP/kapitan, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP/kapitan, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/stack/medical/bruise_pack, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/type71/flamer/leader, WEAR_J_STORE)
@@ -1643,8 +1703,15 @@
 		list("UM4 Helmet", 0, /obj/item/clothing/head/helmet/marine/veteran/UPP, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_RECOMMENDED),
 
 		list("ARMOR (CHOOSE 1)", 0, null, null, null),
-		list("UL4 senior officer jacket", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/kapitan, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
-		list("UL6 Personal Armor", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/support, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+		list("UL4 senior officer jacket", 0, /obj/item/clothing/suit/marine/faction/UPP/kapitan, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
+		list("UL6 Personal Armor", 0, /obj/item/clothing/suit/marine/faction/UPP/support, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Medical Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/med, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Tool Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/engi, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("BELT (CHOOSE 1)", 0, null, null, null),
 		list("Type 41 Ammo Load Rig", 0, /obj/item/storage/belt/marine/upp, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
@@ -1770,7 +1837,7 @@
 		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/type71/ap, WEAR_IN_ACCESSORY)
 
 	//jacket
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/faction/UPP/kapitan, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP/kapitan, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/stack/medical/bruise_pack, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/type71/flamer/leader, WEAR_J_STORE)
@@ -1804,8 +1871,15 @@
 		list("UM4 Helmet", 0, /obj/item/clothing/head/helmet/marine/veteran/UPP, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_RECOMMENDED),
 
 		list("ARMOR (CHOOSE 1)", 0, null, null, null),
-		list("UL4 senior officer jacket", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/kapitan, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
-		list("UL6 Personal Armor", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/support, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+		list("UL4 senior officer jacket", 0, /obj/item/clothing/suit/marine/faction/UPP/kapitan, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
+		list("UL6 Personal Armor", 0, /obj/item/clothing/suit/marine/faction/UPP/support, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Medical Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/med, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Tool Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/engi, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("BELT (CHOOSE 1)", 0, null, null, null),
 		list("Type 41 Ammo Load Rig", 0, /obj/item/storage/belt/marine/upp, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
@@ -1931,7 +2005,7 @@
 		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/type71/ap, WEAR_IN_ACCESSORY)
 
 	//jacket
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/faction/UPP/kapitan, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP/kapitan, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/stack/medical/bruise_pack, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/type71/flamer/leader, WEAR_J_STORE)
@@ -1965,8 +2039,15 @@
 		list("UM4 Helmet", 0, /obj/item/clothing/head/helmet/marine/veteran/UPP, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_RECOMMENDED),
 
 		list("ARMOR (CHOOSE 1)", 0, null, null, null),
-		list("UL4 senior officer jacket", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/kapitan, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
-		list("UL6 Personal Armor", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/support, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+		list("UL4 senior officer jacket", 0, /obj/item/clothing/suit/marine/faction/UPP/kapitan, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
+		list("UL6 Personal Armor", 0, /obj/item/clothing/suit/marine/faction/UPP/support, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Medical Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/med, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Tool Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/engi, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("BELT (CHOOSE 1)", 0, null, null, null),
 		list("Type 41 Ammo Load Rig", 0, /obj/item/storage/belt/marine/upp, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
@@ -2092,7 +2173,7 @@
 		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/type71/ap, WEAR_IN_ACCESSORY)
 
 	//jacket
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/faction/UPP/kapitan, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP/kapitan, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/stack/medical/bruise_pack, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/type71/flamer/leader, WEAR_J_STORE)
@@ -2126,8 +2207,15 @@
 		list("UM4 Helmet", 0, /obj/item/clothing/head/helmet/marine/veteran/UPP, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_RECOMMENDED),
 
 		list("ARMOR (CHOOSE 1)", 0, null, null, null),
-		list("UL4 senior officer jacket", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/kapitan, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
-		list("UL6 Personal Armor", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/support, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+		list("UL4 senior officer jacket", 0, /obj/item/clothing/suit/marine/faction/UPP/kapitan, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
+		list("UL6 Personal Armor", 0, /obj/item/clothing/suit/marine/faction/UPP/support, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Medical Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/med, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Tool Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/engi, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("BELT (CHOOSE 1)", 0, null, null, null),
 		list("Type 41 Ammo Load Rig", 0, /obj/item/storage/belt/marine/upp, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
@@ -2253,7 +2341,7 @@
 		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/type71/ap, WEAR_IN_ACCESSORY)
 
 	//jacket
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/faction/UPP/kapitan, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP/kapitan, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/stack/medical/bruise_pack, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/type71/flamer/leader, WEAR_J_STORE)
@@ -2287,8 +2375,15 @@
 		list("UM4 Helmet", 0, /obj/item/clothing/head/helmet/marine/veteran/UPP, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_RECOMMENDED),
 
 		list("ARMOR (CHOOSE 1)", 0, null, null, null),
-		list("UL4 senior officer jacket", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/kapitan, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
-		list("UL6 Personal Armor", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/support, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+		list("UL4 senior officer jacket", 0, /obj/item/clothing/suit/marine/faction/UPP/kapitan, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
+		list("UL6 Personal Armor", 0, /obj/item/clothing/suit/marine/faction/UPP/support, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Medical Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/med, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Tool Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/engi, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("BELT (CHOOSE 1)", 0, null, null, null),
 		list("Type 41 Ammo Load Rig", 0, /obj/item/storage/belt/marine/upp, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
@@ -2414,7 +2509,7 @@
 		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/type71/ap, WEAR_IN_ACCESSORY)
 
 	//jacket
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/faction/UPP/kapitan, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP/kapitan, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/stack/medical/bruise_pack, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/type71/flamer/leader, WEAR_J_STORE)
@@ -2448,8 +2543,15 @@
 		list("UM4 Helmet", 0, /obj/item/clothing/head/helmet/marine/veteran/UPP, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_RECOMMENDED),
 
 		list("ARMOR (CHOOSE 1)", 0, null, null, null),
-		list("UL4 senior officer jacket", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/kapitan, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
-		list("UL6 Personal Armor", 0, /obj/item/clothing/suit/storage/marine/faction/UPP/support, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+		list("UL4 senior officer jacket", 0, /obj/item/clothing/suit/marine/faction/UPP/kapitan, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
+		list("UL6 Personal Armor", 0, /obj/item/clothing/suit/marine/faction/UPP/support, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Medical Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/med, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Tool Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/engi, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("BELT (CHOOSE 1)", 0, null, null, null),
 		list("Type 41 Ammo Load Rig", 0, /obj/item/storage/belt/marine/upp, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
@@ -2570,7 +2672,7 @@
 	var/obj/item/clothing/accessory/storage/tool_webbing/equipped/W = new()
 	UPP.attach_accessory(new_human, W)
 	new_human.equip_to_slot_or_del(UPP, WEAR_BODY)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/faction/UPP, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/shotgun/type23/dual, WEAR_J_STORE)
 	//waist
@@ -2655,7 +2757,7 @@
 	var/obj/item/clothing/accessory/storage/tool_webbing/equipped/W = new()
 	UPP.attach_accessory(new_human, W)
 	new_human.equip_to_slot_or_del(UPP, WEAR_BODY)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/faction/UPP/support, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP/support, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/reagent_container/glass/bottle/tricordrazine, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/smg/bizon/upp, WEAR_J_STORE)
 	//waist

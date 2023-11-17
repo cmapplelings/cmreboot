@@ -11,7 +11,7 @@ GLOBAL_LIST_INIT(cm_vending_clothing_military_police, list(
 		list("Marine Combat Boots", 0, /obj/item/clothing/shoes/marine/knife, MARINE_CAN_BUY_SHOES, VENDOR_ITEM_MANDATORY),
 
 		list("ARMOR (TAKE ALL)", 0, null, null, null),
-		list("Military Police M2 Armor", 0, /obj/item/clothing/suit/storage/marine/MP, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+		list("Military Police M2 Armor", 0, /obj/item/clothing/suit/marine/MP, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
 		list("MP Beret", 0, /obj/item/clothing/head/beret/marine/mp, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_MANDATORY),
 
 		list("HANDGUN CASE (CHOOSE 1)", 0, null, null, null),
@@ -69,8 +69,13 @@ GLOBAL_LIST_INIT(cm_vending_clothing_military_police_warden, list(
 		list("Marine Combat Boots", 0, /obj/item/clothing/shoes/marine/knife, MARINE_CAN_BUY_SHOES, VENDOR_ITEM_MANDATORY),
 
 		list("ARMOR (TAKE ALL)", 0, null, null, null),
-		list("Military Warden M3 Armor", 0, /obj/item/clothing/suit/storage/marine/MP/warden, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+		list("Military Warden M3 Armor", 0, /obj/item/clothing/suit/marine/MP/warden, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
 		list("Warden Peaked Cap", 0, /obj/item/clothing/head/beret/marine/mp/warden, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_MANDATORY),
+
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("HANDGUN CASE (CHOOSE 1)", 0, null, null, null),
 		list("88 mod 4 Combat Pistol Case", 0, /obj/item/storage/box/guncase/mod88, MARINE_CAN_BUY_SECONDARY, VENDOR_ITEM_MANDATORY),

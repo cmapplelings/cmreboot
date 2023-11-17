@@ -26,7 +26,7 @@
 	kit_overlay = "demo"
 
 /obj/item/storage/box/spec/demolitionist/fill_preset_inventory()
-	new /obj/item/clothing/suit/storage/marine/M3T(src)
+	new /obj/item/clothing/suit/marine/M3T(src)
 	new /obj/item/clothing/head/helmet/marine/M3T(src)
 	new /obj/item/clothing/head/helmet/marine/M3T(src)
 	new /obj/item/storage/backpack/marine/rocketpack(src)
@@ -52,7 +52,7 @@
 
 /obj/item/storage/box/spec/sniper/fill_preset_inventory()
 	// sniper
-	new /obj/item/clothing/suit/storage/marine/ghillie(src)
+	new /obj/item/clothing/suit/marine/ghillie(src)
 	new /obj/item/clothing/head/helmet/marine/ghillie(src)
 	new /obj/item/clothing/glasses/night/m42_night_goggles(src)
 	new /obj/item/ammo_magazine/sniper(src)
@@ -75,7 +75,7 @@
 	kit_overlay = "scout"
 
 /obj/item/storage/box/spec/scout/fill_preset_inventory()
-	new /obj/item/clothing/suit/storage/marine/M3S(src)
+	new /obj/item/clothing/suit/marine/M3S(src)
 	new /obj/item/clothing/head/helmet/marine/scout(src)
 	new /obj/item/clothing/glasses/night/M4RA(src)
 	new /obj/item/ammo_magazine/rifle/m4ra/custom(src)
@@ -107,7 +107,7 @@
 	kit_overlay = "pyro"
 
 /obj/item/storage/box/spec/pyro/fill_preset_inventory()
-	new /obj/item/clothing/suit/storage/marine/M35(src)
+	new /obj/item/clothing/suit/marine/M35(src)
 	new /obj/item/clothing/head/helmet/marine/pyro(src)
 	new /obj/item/storage/large_holster/fuelpack(src)
 	new /obj/item/weapon/gun/flamer/M240T(src)

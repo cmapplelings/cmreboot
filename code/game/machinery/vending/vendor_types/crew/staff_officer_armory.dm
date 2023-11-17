@@ -12,7 +12,7 @@
 
 GLOBAL_LIST_INIT(cm_vending_clothing_staff_officer_armory, list(
 		list("COMBAT EQUIPMENT (TAKE ALL)", 0, null, null, null),
-		list("Officer M3 Armor", 0, /obj/item/clothing/suit/storage/marine/MP/SO, MARINE_CAN_BUY_COMBAT_ARMOR, VENDOR_ITEM_MANDATORY),
+		list("Officer M3 Armor", 0, /obj/item/clothing/suit/marine/MP/SO, MARINE_CAN_BUY_COMBAT_ARMOR, VENDOR_ITEM_MANDATORY),
 		list("Officer M10 Helmet", 0, /obj/item/clothing/head/helmet/marine/MP/SO, MARINE_CAN_BUY_COMBAT_HELMET, VENDOR_ITEM_MANDATORY),
 		list("Marine Combat Boots", 0, /obj/item/clothing/shoes/marine/knife, MARINE_CAN_BUY_SHOES, VENDOR_ITEM_MANDATORY),
 		list("Marine Combat Gloves", 0, /obj/item/clothing/gloves/marine, MARINE_CAN_BUY_GLOVES, VENDOR_ITEM_MANDATORY),
@@ -22,6 +22,13 @@ GLOBAL_LIST_INIT(cm_vending_clothing_staff_officer_armory, list(
 		list("SPECIALISATION KIT (CHOOSE 1)", 0, null, null, null),
 		list("Essential Engineer Set", 0, /obj/effect/essentials_set/engi, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_RECOMMENDED),
 		list("Essential Medical Set", 0, /obj/effect/essentials_set/medic, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_RECOMMENDED),
+
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Medical Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/med, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Tool Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/engi, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("BELT (CHOOSE 1)", 0, null, null, null),
 		list("G8-A General Utility Pouch", 0, /obj/item/storage/backpack/general_belt, MARINE_CAN_BUY_BELT, VENDOR_ITEM_RECOMMENDED),

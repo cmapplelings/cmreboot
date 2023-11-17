@@ -652,6 +652,109 @@
 /obj/item/clothing/accessory/storage/surg_vest/drop_black/equipped
 	hold = /obj/item/storage/internal/accessory/surg_vest/equipped
 
+/obj/item/storage/internal/accessory/straps
+	storage_slots = 3
+
+/obj/item/clothing/accessory/storage/armorstraps
+	name = "general storage armor straps"
+	desc = "These straps can be attached to an armor suit. Attached are two pouches you can store equipment in."
+	var/list/can_hold = new/list() //List of objects which this item can store (if set, it can't store anything else)
+	var/list/cant_hold = new/list() //List of objects which this item can't store (in effect only if can_hold isn't set)
+	var/list/bypass_w_limit = new/list() //a list of objects which this item can store despite not passing the w_class limit
+	hold = /obj/item/storage/internal/accessory/straps
+	var/has_gamemode_skin = FALSE ///Whether to use map-variant skins.
+	icon_state = "straps_gen_w"
+	slot = ACCESSORY_SLOT_ARMORSTORAGE
+	has_gamemode_skin = TRUE
+	can_hold = list(/obj/item/storage/internal/accessory/drop_pouch)
+
+/obj/item/storage/internal/accessory/straps/mag
+	storage_slots = 2
+
+/obj/item/clothing/accessory/storage/armorstraps/mag
+	name = "magazine storage armor straps"
+	desc = "These straps can be attached to an armor suit. Attached are three magazine pouches."
+	hold = /obj/item/storage/internal/accessory/straps/mag
+	icon_state = "straps_mag_w"
+	can_hold = list(
+		/obj/item/ammo_magazine/rifle,
+		/obj/item/ammo_magazine/smg,
+		/obj/item/ammo_magazine/pistol,
+		/obj/item/ammo_magazine/revolver,
+		/obj/item/ammo_magazine/sniper,
+		/obj/item/ammo_magazine/m60,
+		/obj/item/ammo_magazine/handful,
+	)
+
+/obj/item/storage/internal/accessory/straps/med
+	storage_slots = 4
+
+/obj/item/clothing/accessory/storage/armorstraps/med
+	name = "medical storage armor straps"
+	desc = "These straps can be attached to an armor suit. Attached is a backpouch designed to hold medical equipment."
+	hold = /obj/item/storage/internal/accessory/straps/med
+	icon_state = "straps_med_w"
+	can_hold = list(
+		/obj/item/device/healthanalyzer,
+		/obj/item/reagent_container/dropper,
+		/obj/item/reagent_container/pill,
+		/obj/item/reagent_container/glass/bottle,
+		/obj/item/reagent_container/syringe,
+		/obj/item/storage/pill_bottle,
+		/obj/item/stack/medical,
+		/obj/item/reagent_container/hypospray,
+		/obj/item/storage/syringe_case,
+		/obj/item/storage/surgical_case,
+		/obj/item/tool/surgery/surgical_line,
+		/obj/item/tool/surgery/synthgraft,
+		/obj/item/roller,
+		/obj/item/bodybag,
+		/obj/item/reagent_container/blood,
+		)
+
+/obj/item/storage/internal/accessory/straps/engi
+	storage_slots = 4
+
+/obj/item/clothing/accessory/storage/armorstraps/engi
+	name = "tool storage armor straps"
+	desc = "These straps can be attached to an armor suit. Attached is a backpouch designed to hold technical equipment."
+	hold = /obj/item/storage/internal/accessory/straps/engi
+	icon_state = "straps_engi_w"
+	can_hold = list(
+		/obj/item/tool/crowbar,
+		/obj/item/tool/screwdriver,
+		/obj/item/tool/weldingtool,
+		/obj/item/tool/wirecutters,
+		/obj/item/tool/wrench,
+		/obj/item/tool/extinguisher/mini,
+		/obj/item/tool/shovel/etool,
+		/obj/item/stack/cable_coil,
+		/obj/item/weapon/gun/smg/nailgun/compact,
+		/obj/item/cell,
+		/obj/item/circuitboard,
+		/obj/item/stock_parts,
+		/obj/item/device/demo_scanner,
+		/obj/item/device/reagent_scanner,
+		/obj/item/device/assembly,
+		/obj/item/device/multitool,
+		/obj/item/device/flashlight,
+		/obj/item/device/t_scanner,
+		/obj/item/device/analyzer,
+		/obj/item/explosive/plastic,
+		/obj/item/device/lightreplacer,
+	)
+
+/obj/item/storage/internal/accessory/straps/shell
+	storage_slots = 6
+
+/obj/item/clothing/accessory/storage/armorstraps/shell
+	name = "shell storage armor straps"
+	desc = "These straps can be attached to an armor suit. Shotgun shells and loose ammo can be stored in the loops."
+	hold = /obj/item/storage/internal/accessory/straps/shell
+	icon_state = "straps_shell_w"
+	can_hold = list(/obj/item/ammo_magazine/handful)
+
+
 /obj/item/clothing/accessory/storage/knifeharness
 	name = "M272 pattern knife vest"
 	desc = "An older generation M272 pattern knife vest once employed by the USCM. Can hold up to 5 knives. It is made of synthcotton."

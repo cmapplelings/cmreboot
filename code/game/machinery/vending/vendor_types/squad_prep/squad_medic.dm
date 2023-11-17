@@ -66,8 +66,8 @@ GLOBAL_LIST_INIT(cm_vending_gear_medic, list(
 		list("M41A Extended Magazine (10x24mm)", 6, /obj/item/ammo_magazine/rifle/extended , null, VENDOR_ITEM_REGULAR),
 
 		list("ARMORS", 0, null, null, null),
-		list("M3 B12 Pattern Marine Armor", 28, /obj/item/clothing/suit/storage/marine/leader, null, VENDOR_ITEM_REGULAR),
-		list("M4 Pattern Armor", 28, /obj/item/clothing/suit/storage/marine/rto, null, VENDOR_ITEM_REGULAR),
+		list("M3 B12 Pattern Marine Armor", 28, /obj/item/clothing/suit/marine/leader, null, VENDOR_ITEM_REGULAR),
+		list("M4 Pattern Armor", 28, /obj/item/clothing/suit/marine/rto, null, VENDOR_ITEM_REGULAR),
 
 		list("RESTRICTED FIREARMS", 0, null, null, null),
 		list("VP78 Pistol", 8, /obj/item/storage/box/guncase/vp78, null, VENDOR_ITEM_REGULAR),
@@ -122,9 +122,15 @@ GLOBAL_LIST_INIT(cm_vending_clothing_medic, list(
 		list("Map", 0, /obj/item/map/current_map, MARINE_CAN_BUY_KIT, VENDOR_ITEM_MANDATORY),
 
 		list("ARMOR (CHOOSE 1)", 0, null, null, null),
-		list("Light Armor", 0, /obj/item/clothing/suit/storage/marine/light, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
-		list("Medium Armor", 0, /obj/item/clothing/suit/storage/marine/medium, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_RECOMMENDED),
-		list("Heavy Armor", 0, /obj/item/clothing/suit/storage/marine/heavy, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
+		list("Light Armor", 0, /obj/item/clothing/suit/marine/light, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
+		list("Medium Armor", 0, /obj/item/clothing/suit/marine/medium, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_RECOMMENDED),
+		list("Heavy Armor", 0, /obj/item/clothing/suit/marine/heavy, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_REGULAR),
+
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Medical Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/med, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
 
 		list("BACKPACK (CHOOSE 1)", 0, null, null, null),
 		list("Medical Backpack", 0, /obj/item/storage/backpack/marine/medic, MARINE_CAN_BUY_BACKPACK, VENDOR_ITEM_REGULAR),

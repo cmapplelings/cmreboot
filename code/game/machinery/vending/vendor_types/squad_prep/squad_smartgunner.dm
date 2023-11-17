@@ -70,6 +70,11 @@ GLOBAL_LIST_INIT(cm_vending_clothing_smartgun, list(
 		list("MRE", 0, /obj/item/storage/box/MRE, MARINE_CAN_BUY_MRE, VENDOR_ITEM_MANDATORY),
 		list("Map", 0, /obj/item/map/current_map, MARINE_CAN_BUY_KIT, VENDOR_ITEM_MANDATORY),
 
+		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
+		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Magazine Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/mag, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+		list("Shell Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps/shell, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),
+
 		list("BELT", 0, null, null, null),
 		list("M802 Smartgunner Sidearm Belt", 0, /obj/item/storage/belt/gun/smartgunner/full, MARINE_CAN_BUY_BELT, VENDOR_ITEM_MANDATORY),
 		list("M280 Smartgunner Drum Belt", 0, /obj/item/storage/belt/marine/smartgunner, MARINE_CAN_BUY_BELT, VENDOR_ITEM_MANDATORY),
