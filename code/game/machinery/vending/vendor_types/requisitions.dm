@@ -391,7 +391,7 @@
 		list("M10 Pattern Technician Helmet", 20, /obj/item/clothing/head/helmet/marine/tech, VENDOR_ITEM_REGULAR),
 		list("M10 Pattern Corpman Helmet", 20, /obj/item/clothing/head/helmet/marine/medic, VENDOR_ITEM_REGULAR),
 		list("M3 Pattern Marine Armor", 20, /obj/item/clothing/suit/marine/, VENDOR_ITEM_REGULAR),
-		list("M3-EOD Pattern Heavy Armor", 10, /obj/item/clothing/suit/storage/marine/heavy, VENDOR_ITEM_REGULAR),
+		list("M3-EOD Pattern Heavy Armor", 10, /obj/item/clothing/suit/marine/heavy, VENDOR_ITEM_REGULAR),
 
 		list("GLOVES", -1, null, null),
 		list("Marine Combat Gloves", 40, /obj/item/clothing/gloves/marine, VENDOR_ITEM_REGULAR),
