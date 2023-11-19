@@ -85,9 +85,8 @@
 		list("Shoulder Holster", round(max(1,(scale * 0.5))), /obj/item/clothing/accessory/storage/holster, VENDOR_ITEM_REGULAR),
 
 		list("ARMOR", -1, null, null),
-		list("M3 Pattern Medium Marine Armor", round(scale * 15), /obj/item/clothing/suit/marine, VENDOR_ITEM_REGULAR),
+		list("M3 Pattern Marine Armor", round(scale * 15), /obj/item/clothing/suit/marine, VENDOR_ITEM_REGULAR),
 		list("M3-EOD Pattern Heavy Armor", round(scale * 10), /obj/item/clothing/suit/marine/heavy, VENDOR_ITEM_REGULAR),
-		list("M3-L Pattern Light Armor", round(scale * 10), /obj/item/clothing/suit/marine/light, VENDOR_ITEM_REGULAR),
 
 		list("BACKPACK", -1, null, null, null),
 		list("Lightweight IMP Backpack", round(scale * 15), /obj/item/storage/backpack/marine, VENDOR_ITEM_REGULAR),
@@ -349,14 +348,6 @@
 		)
 
 //------------ESSENTIAL SETS---------------
-/obj/effect/essentials_set/random/uscm_light_armor
-	spawned_gear_list = list(
-		/obj/item/clothing/suit/marine/light/padded,
-		/obj/item/clothing/suit/marine/light/padless,
-		/obj/item/clothing/suit/marine/light/padless_lines,
-		/obj/item/clothing/suit/marine/light/skull,
-		/obj/item/clothing/suit/marine/light/smooth,
-	)
 
 /obj/effect/essentials_set/random/uscm_heavy_armor
 	spawned_gear_list = list(

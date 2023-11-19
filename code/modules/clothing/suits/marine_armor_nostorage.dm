@@ -1,6 +1,6 @@
 /obj/item/clothing/suit/marine
 	name = "\improper M3 pattern marine armor"
-	desc = "A standard Colonial Marines M3 Pattern Chestplate. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage."
+	desc = "A standard Colonial Marines M3 Pattern Chestplate."
 	icon = 'icons/obj/items/clothing/cm_suits.dmi'
 	icon_state = "1"
 	item_state = "marine_armor" //Make unique states for Officer & Intel armors.
@@ -25,7 +25,7 @@
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
 	movement_compensation = SLOWDOWN_ARMOR_LIGHT
 	siemens_coefficient = 0.7
-	slowdown = SLOWDOWN_ARMOR_MEDIUM
+	slowdown = SLOWDOWN_ARMOR_LIGHT
 	allowed = list(
 		/obj/item/weapon/gun,
 		/obj/item/prop/prop_gun,
@@ -189,11 +189,6 @@
 	icon_state = "2"
 	specialty = "M3 pattern padless marine"
 
-/obj/item/clothing/suit/marine/padless_lines
-	name = "M3 pattern ridged marine armor"
-	icon_state = "3"
-	specialty = "M3 pattern ridged marine"
-
 /obj/item/clothing/suit/marine/skull
 	name = "M3 pattern skull marine armor"
 	icon_state = "5"
@@ -207,7 +202,7 @@
 /obj/item/clothing/suit/marine/rto
 	icon_state = "io"
 	name = "\improper M4 pattern marine armor"
-	desc = "A well tinkered and crafted hybrid of Smart-Gunner mesh and M3 pattern plates. Robust, yet nimble, with room for all your pouches."
+	desc = "A custom-made hybrid of Smart-Gunner mesh and M3 pattern plates."
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_rad = CLOTHING_ARMOR_MEDIUM
 	light_range = 5 //slightly higher
@@ -220,7 +215,7 @@
 
 /obj/item/clothing/suit/marine/MP
 	name = "\improper M2 pattern MP armor"
-	desc = "A standard Colonial Marines M2 Pattern Chestplate. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage."
+	desc = "A standard Colonial Marines M2 Pattern Chestplate."
 	icon_state = "mp_armor"
 	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bullet = CLOTHING_ARMOR_LOW
@@ -257,7 +252,7 @@
 /obj/item/clothing/suit/marine/MP/warden
 	icon_state = "warden"
 	name = "\improper M3 pattern warden MP armor"
-	desc = "A well-crafted suit of M3 Pattern Armor typically distributed to Wardens. Useful for letting your men know who is in charge."
+	desc = "A well-crafted suit of M3 Pattern Armor typically distributed to Wardens."
 	armor_bio = CLOTHING_ARMOR_MEDIUMLOW
 	armor_rad = CLOTHING_ARMOR_MEDIUMLOW
 	uniform_restricted = list(/obj/item/clothing/under/marine/warden)
@@ -267,7 +262,7 @@
 /obj/item/clothing/suit/marine/MP/WO
 	icon_state = "warrant_officer"
 	name = "\improper M3 pattern chief MP armor"
-	desc = "A well-crafted suit of M3 Pattern Armor typically distributed to Chief MPs. Useful for letting your men know who is in charge."
+	desc = "A well-crafted suit of M3 Pattern Armor typically distributed to Chief MPs."
 	uniform_restricted = list(/obj/item/clothing/under/marine/officer/warrant)
 	specialty = "M3 pattern chief MP"
 	item_state_slots = list(WEAR_JACKET = "warrant_officer")
@@ -275,7 +270,7 @@
 
 /obj/item/clothing/suit/marine/MP/general
 	name = "\improper M3 pattern general officer armor"
-	desc = "A well-crafted suit of M3 Pattern Armor with a gold shine. It looks very expensive, but shockingly fairly easy to carry and wear."
+	desc = "A a custom-made suit of M3 pattern marine armor, issued to Military Police."
 	icon_state = "general"
 	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bio = CLOTHING_ARMOR_MEDIUM
@@ -286,7 +281,7 @@
 
 /obj/item/clothing/suit/marine/MP/SO
 	name = "\improper M3 pattern officer armor"
-	desc = "A well-crafted suit of M3 Pattern Armor typically found in the hands of higher-ranking officers. Useful for letting your men know who is in charge when taking to the field."
+	desc = "A custom-made suit of M3 pattern marine armor, issued to officers."
 	icon_state = "officer"
 	flags_atom = null
 	uniform_restricted = list(/obj/item/clothing/under/marine/officer, /obj/item/clothing/under/rank/qm_suit, /obj/item/clothing/under/rank/chief_medical_officer, /obj/item/clothing/under/marine/dress)
@@ -297,7 +292,7 @@
 //Or give it its own sprite. It's more for the future.
 /obj/item/clothing/suit/marine/MP/CO
 	name = "\improper M3 pattern commanding officer armor"
-	desc = "A robust, well-polished suit of armor for the Commanding Officer. Custom-made to fit its owner with special straps to operate a smartgun. Show those Marines who's really in charge."
+	desc = "A polished suit of M3 pattern marine armor for the Commanding Officer. Custom-made to fit its owner with special straps to operate a smartgun."
 	icon_state = "co_officer"
 	item_state = "co_officer"
 	armor_bullet = CLOTHING_ARMOR_HIGH
@@ -312,7 +307,7 @@
 
 /obj/item/clothing/suit/marine/MP/CO/jacket
 	name = "\improper M3 pattern commanding officer armored coat"
-	desc = "A robust, well-polished suit of armor for the Commanding Officer. Custom-made to fit its owner with special straps to operate a smartgun. Show those Marines who's really in charge. This one has a coat over it for added warmth."
+	desc = "A polished suit of M3 pattern marine armor for the Commanding Officer. Custom-made to fit its owner with special straps to operate a smartgun. This one has a coat over it for added warmth."
 	icon_state = "bridge_coat_armored"
 	item_state = "bridge_coat_armored"
 	item_state_slots = list(WEAR_JACKET = "bridge_coat_armored")
@@ -381,7 +376,7 @@
 
 /obj/item/clothing/suit/marine/leader
 	name = "\improper B12 pattern marine armor"
-	desc = "A lightweight suit of carbon fiber body armor built for quick movement. Designed in a lovely forest green. Use it to toggle the built-in flashlight."
+	desc = "A lightweight suit of carbon fiber M3 pattern marine armor built for increased protection."
 	icon_state = "7"
 	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bomb = CLOTHING_ARMOR_MEDIUM
@@ -391,7 +386,7 @@
 
 /obj/item/clothing/suit/marine/tanker
 	name = "\improper M3 pattern tanker armor"
-	desc = "A modified and refashioned suit of M3 Pattern armor designed to be worn by the loader of a USCM vehicle crew. While the suit is a bit more encumbering to wear with the crewman uniform, it offers the loader a degree of protection that would otherwise not be enjoyed."
+	desc = "A modified and refashioned suit of M3 Pattern armor designed to be worn by the loader of a USCM vehicle crew."
 	icon_state = "tanker"
 	uniform_restricted = list(/obj/item/clothing/under/marine/officer/tanker)
 	specialty = "M3 pattern tanker"
@@ -438,7 +433,7 @@
 
 /obj/item/clothing/suit/marine/light/vest
 	name = "\improper M3-VL pattern ballistics vest"
-	desc = "Up until 2182 USCM non-combat personnel were issued non-standardized ballistics vests, though the lack of IMP compatibility and suit lamps proved time and time again inefficient. This modified M3-L shell is the result of a 6-year R&D program; It provides utility, protection, AND comfort to all USCM non-combat personnel."
+	desc = "A lightweight ballistics vest typically issued to non-combat personnel on the field."
 	icon_state = "VL"
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 	flags_marine_armor = ARMOR_LAMP_OVERLAY //No squad colors when wearing this since it'd look funny.
@@ -456,12 +451,12 @@
 
 /obj/item/clothing/suit/marine/light/vest/dcc
 	name = "\improper M3-VL pattern flak vest"
-	desc = "A combination of the standard non-combat M3-VL ballistics vest and M70 flak jacket, this piece of armor has been distributed to dropship crew to keep them safe from threats external and internal..."
+	desc = "A combination of the standard non-combat M3-VL ballistics vest and M70 flak jacket, this piece of armor has been distributed to dropship crew."
 	icon_state = "VL_FLAK"
 
 /obj/item/clothing/suit/marine/light/synvest
 	name = "\improper M3A1 Synthetic Utility Vest"
-	desc = "This variant of the ubiquitous M3 pattern ballistics vest has been extensively modified, providing no protection in exchange for maximum mobility and storage space. Synthetic programming compliant."
+	desc = "This variant of the ubiquitous M3 pattern ballistics vest has been extensively modified. Synthetic programming compliant."
 	icon_state = "VL_syn_camo"
 	flags_atom = NO_NAME_OVERRIDE
 	flags_marine_armor = ARMOR_LAMP_OVERLAY|SYNTH_ALLOWED //No squad colors + can be worn by synths.
@@ -499,9 +494,8 @@
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 
 /obj/item/clothing/suit/marine/heavy
-	name = "\improper M3-EOD pattern heavy armor"
-	desc = "A heavier version of the standard M3 pattern armor, the armor is primarily designed to withstand ballistic, explosive, and internal damage, with the drawback of increased bulk and thus reduced movement speed, alongside little additional protection from standard blunt force impacts and biological threats."
-	desc_lore = "This configuration of the iconic armor was developed during the Canton War in 2160 between the UPP and USCM - Designed in response to a need for higher protection for ComTechs assigned as EODs during the conflict, this is the pinnacle of protection for your average marine. The shoulders and kneepads have both been expanded upon heavily, covering up the arteries on each limb. A special spall liner was developed for this suit, with the same technology being used in the M70 Flak Jacket being developed at the same time."
+	name = "\improper M3 pattern heavy armor"
+	desc = "A heavier version of the standard M3 pattern armor, designed to withstand heavier ballistic, explosive, and internal damage, with the drawback of increased bulk and thus reduced movement speed, alongside little additional protection from standard blunt force impacts and biological threats."
 	specialty = "\improper M3-EOD pattern"
 	icon_state = "H1"
 	armor_variation = 6
@@ -539,7 +533,7 @@
 
 /obj/item/clothing/suit/marine/specialist
 	name = "\improper B18 defensive armor"
-	desc = "A heavy, rugged set of armor plates for when you really, really need to not die horribly. Slows you down though.\nComes with two tricord injectors in each arm guard."
+	desc = "A heavy, rugged set of armor plates, issued to heavy-duty specialists."
 	icon_state = "xarmor"
 	armor_melee = CLOTHING_ARMOR_HIGH
 	armor_bullet = CLOTHING_ARMOR_HIGH
