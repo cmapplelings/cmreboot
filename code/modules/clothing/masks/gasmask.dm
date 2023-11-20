@@ -59,6 +59,10 @@
 	name = "\improper UPP armored commando balaclava"
 	icon_state = "upp_mask"
 
+/obj/item/clothing/mask/gas/pmc/uppnbc
+	name = "\improper UPP NBC mask"
+	icon_state = "uppnbc"
+
 /obj/item/clothing/mask/gas/pmc/leader
 	name = "\improper M8 pattern armored balaclava"
 	desc = "An armored balaclava designed to conceal both the identity of the operator and act as an air-filter. This particular suit looks like it belongs to a high-ranking officer."
