@@ -426,7 +426,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/welding(new_human), WEAR_EYES)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas, WEAR_FACE)
 	//head
-	var/headgear = prob(70) ? obj/item/clothing/head/helmet/marine/veteran/UPP : /obj/item/clothing/head/uppcap/ushanka
+	var/headgear = prob(70) ? /obj/item/clothing/head/helmet/marine/veteran/UPP : /obj/item/clothing/head/uppcap/ushanka
 	new_human.equip_to_slot_or_del(new headgear, WEAR_HEAD)
 	//body
 	var/obj/item/clothing/under/marine/veteran/UPP/engi/UPP = new()
