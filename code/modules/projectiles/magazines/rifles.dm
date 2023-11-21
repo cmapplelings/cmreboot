@@ -283,6 +283,25 @@
 	ammo_band_color = AMMO_BAND_COLOR_HEAP
 
 //-------------------------------------------------------
+
+/obj/item/ammo_magazine/rifle/ak4047
+	name = "\improper AK-4047 magazine (5.45x39mm)"
+	desc = "A 5.45x39mm high-capacity casket magazine for the AK-4047 pulse rifle."
+	caliber = "5.45x39mm"
+	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/upp.dmi'
+	icon_state = "ak4047"
+	ammo_band_icon = "+ak4047_band"
+	ammo_band_icon_empty = "+ak4047_band_e"
+	default_ammo = /datum/ammo/bullet/rifle/type71
+	max_rounds = 45
+	gun_type = /obj/item/weapon/gun/rifle/ak4047
+
+/obj/item/ammo_magazine/rifle/ak4047/ap
+	name = "\improper AK-4047 AP magazinee (5.45x39mm)"
+	desc = "A 5.45x39mm high-capacity casket magazine containing armor piercing rounds for the AK-4047 rifle."
+	default_ammo = /datum/ammo/bullet/rifle/type71/ap
+	ammo_band_color = AMMO_BAND_COLOR_AP
+
 //UPP TYPE 71 RIFLE
 
 /obj/item/ammo_magazine/rifle/type71

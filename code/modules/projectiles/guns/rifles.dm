@@ -1268,6 +1268,58 @@
 
 //-------------------------------------------------------
 
+/obj/item/weapon/gun/rifle/ak4047
+	name = "\improper AK-4047 pulse rifle"
+	desc = "The primary service rifle of the UPP Space Operating Forces, produced by Norcomm, the AK-4047 is comparable in performance to the USCMC's M41A pulse rifle."
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/upp.dmi'
+	icon_state = "ak4047"
+	item_state = "ak4047"
+
+	fire_sound = 'sound/weapons/gun_type71.ogg'
+	reload_sound = 'sound/weapons/handling/m41_reload.ogg'
+	unload_sound = 'sound/weapons/handling/m41_unload.ogg'
+	current_mag = /obj/item/ammo_magazine/rifle/ak4047
+	wield_delay = WIELD_DELAY_FAST
+	attachable_allowed = list(
+		/obj/item/attachable/suppressor,
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/bayonet/upp,
+		/obj/item/attachable/reddot,
+		/obj/item/attachable/magnetic_harness,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/reflex,
+		/obj/item/attachable/attached_gun/grenade/ak4047,
+		/obj/item/attachable/stock/rifle/collapsible,
+		/obj/item/attachable/attached_gun/shotgun,
+		)
+
+	starting_attachment_types = list(/obj/item/attachable/attached_gun/grenade/ak4047)
+	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	flags_equip_slot = SLOT_BACK
+	start_automatic = TRUE
+
+	/obj/item/weapon/gun/rifle/ak4047/set_gun_attachment_offsets()
+		attachable_offset = list("muzzle_x" = 43, "muzzle_y" = 17,"rail_x" = 22, "rail_y" = 21, "under_x" = 37, "under_y" = 15, "stock_x" = 24, "stock_y" = 13, "special_x" = 37, "special_y" = 16)
+
+/obj/item/weapon/gun/rifle/ak4047/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_11)
+	set_burst_amount(BURST_AMOUNT_TIER_4)
+	set_burst_delay(FIRE_DELAY_TIER_11)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_3
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
+	scatter = SCATTER_AMOUNT_TIER_9
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_9
+	scatter_unwielded = SCATTER_AMOUNT_TIER_2
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_2
+	recoil_unwielded = RECOIL_AMOUNT_TIER_2
+
+/obj/item/weapon/gun/rifle/ak4047/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/ak4047_barrel/integrated = new(src)
+	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
+	integrated.Attach(src)
+	update_attachable(integrated.slot)
 
 //-------------------------------------------------------
 //UPP TYPE 71 RIFLE

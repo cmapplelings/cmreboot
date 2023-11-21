@@ -2228,6 +2228,17 @@ Defined in conflicts.dm of the #defines folder.
 		if("classic")
 			attach_icon = new_attach_icon ? new_attach_icon : "c_" + attach_icon
 
+/obj/item/attachable/ak4047_barrel
+	name = "AK-4047 barrel"
+	desc = "This isn't supposed to be seperated from the gun, how'd this happen?"
+	icon_state = "ak4047_barrel"
+	attach_icon = "ak4047_barrel"
+	slot = "special"
+	wield_delay_mod = WIELD_DELAY_NONE
+	flags_attach_features = NO_FLAGS
+	melee_mod = 0 //Integrated attachment for visuals, stats handled on main gun.
+	size_mod = 0
+
 /obj/item/attachable/upp_rpg_breech
 	name = "HJRA-12 Breech"
 	desc = "This isn't supposed to be seperated from the gun, how'd this happen?"
@@ -2823,6 +2834,16 @@ Defined in conflicts.dm of the #defines folder.
 /obj/item/attachable/attached_gun/grenade/m203/Initialize()
 	. = ..()
 	grenade_pass_flags = NO_FLAGS
+
+/obj/item/attachable/attached_gun/grenade/ak4047
+	name = "\improper AK-4047 underslung grenade launcher"
+	desc = "A underslung grenade launcher for the Norcomm AK-4047 pulse rifle."
+	icon_state = "grenade-4047"
+	attach_icon = "grenade-4047_a"
+	current_rounds = 0
+	max_rounds = 3
+	max_range = 10
+	attachment_firing_delay = 30
 
 //"ammo/flamethrower" is a bullet, but the actual process is handled through fire_attachment, linked through Fire().
 /obj/item/attachable/attached_gun/flamer
