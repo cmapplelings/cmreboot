@@ -63,7 +63,7 @@
 	skills = /datum/skills/upp
 	assignment = JOB_UPP
 	rank = JOB_UPP
-	role_comm_title = "Sol"
+	role_comm_title = "RFN"
 	paygrade = "UE2"
 
 /datum/equipment_preset/upp/soldier/load_gear(mob/living/carbon/human/new_human)
@@ -252,7 +252,7 @@
 	else
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/hud/health(new_human), WEAR_EYES)
 	//head
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/uppcap, WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/UPP/medic, WEAR_HEAD)
 	//body
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/veteran/UPP/medic, WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP/support, WEAR_JACKET) //medic should move fast
@@ -426,7 +426,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/welding(new_human), WEAR_EYES)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas, WEAR_FACE)
 	//head
-	var/headgear = prob(70) ? /obj/item/clothing/head/helmet/marine/veteran/UPP/engi : /obj/item/clothing/head/uppcap/ushanka
+	var/headgear = prob(70) ? /obj/item/clothing/head/helmet/marine/veteran/UPP : /obj/item/clothing/head/uppcap/ushanka
 	new_human.equip_to_slot_or_del(new headgear, WEAR_HEAD)
 	//body
 	var/obj/item/clothing/under/marine/veteran/UPP/engi/UPP = new()
@@ -681,7 +681,7 @@
 	skills = /datum/skills/upp/specialist
 	assignment = JOB_UPP_SPECIALIST
 	rank = JOB_UPP_SPECIALIST
-	role_comm_title = "Spc"
+	role_comm_title = "MG"
 	paygrade = "UE5"
 
 /datum/equipment_preset/upp/machinegunner/load_gear(mob/living/carbon/human/new_human)
@@ -828,7 +828,7 @@
 	//face
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/UPP/command, WEAR_L_EAR)
 	//head
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/uppcap/beret, WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/UPP/leader, WEAR_HEAD)
 	//body
 	var/obj/item/clothing/under/marine/veteran/UPP/UPP = new()
 	var/obj/item/clothing/accessory/storage/webbing/W = new()
@@ -837,9 +837,9 @@
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/type71, WEAR_IN_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/type71/ap, WEAR_IN_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/type71/ap, WEAR_IN_ACCESSORY)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP/heavy, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/faction/UPP, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range, WEAR_IN_JACKET)
-	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/type71/flamer, WEAR_J_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/type71, WEAR_J_STORE)
 	//waist
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/type47/t73, WEAR_WAIST)
 	switch(UPPleadsidearm)
@@ -874,7 +874,7 @@
 
 		list("HELMET (CHOOSE 1)", 0, null, null, null),
 		list("Armored Beret", 0, /obj/item/clothing/head/uppcap/beret, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
-		list("UM4 Helmet", 0, /obj/item/clothing/head/helmet/marine/veteran/UPP, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
+		list("UM4 Leader Helmet", 0, /obj/item/clothing/head/helmet/marine/veteran/UPP/leader, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
 
 		list("ARMOR STORAGE STRAPS (CHOOSE 1)", 0, null, null, null),
 		list("General Storage Armor Straps", 0, /obj/item/clothing/accessory/storage/armorstraps, MARINE_CAN_BUY_STRAPS, VENDOR_ITEM_REGULAR),

@@ -1101,7 +1101,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 // UPP Are very powerful against bullets (marines) but middling against melee (xenos)
 /obj/item/clothing/head/helmet/marine/veteran/UPP
 	name = "\improper UM4 helmet"
-	desc = "Using highly skilled manufacturing techniques this UM4 helmet manages to be very resistant to ballistics damage, at the cost of its huge weight causing an extreme stress on the occupant's head that will most likely cause neck problems."
+	desc = "The UM4 is the standard-issue helmet of the UPP, most commonly seen being worn by SOF ground troops."
 	icon_state = "upp_helmet"
 	armor_bullet = CLOTHING_ARMOR_HIGH
 	armor_energy = CLOTHING_ARMOR_MEDIUM
@@ -1112,6 +1112,26 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROT
 	clothing_traits = list(TRAIT_EAR_PROTECTION) //the sprites clearly fully cover the ears and most of the head
 
+/obj/item/clothing/head/helmet/marine/veteran/UPP/nbc
+	name = "\improper UPP NBC hood"
+	desc = "This hoods is designed to be used alongside the NBC protective suit. It provides exceptional protection against biological hazards, but not much against force."
+	icon_state = "upp_nbc"
+	armor_bullet = CLOTHING_ARMOR_LOW
+	armor_energy = CLOTHING_ARMOR_MEDIUM
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
+	armor_bio = CLOTHING_ARMOR_HIGH
+	armor_rad = CLOTHING_ARMOR_HIGH
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
+
+/obj/item/clothing/head/helmet/marine/veteran/UPP/leader
+	name = "\improper UM4 helmet"
+	desc = "This version of the UM4 helmet has an added comms antenna and additional padding."
+	icon_state = "upp_helmet_leader"
+	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_energy = CLOTHING_ARMOR_MEDIUM
+	armor_bomb = CLOTHING_ARMOR_HIGH
+	var/protection_on = TRUE
+
 /obj/item/clothing/head/helmet/marine/veteran/UPP/engi
 	name = "\improper UM4-V helmet"
 	desc = "This version of the UM4 helmet has a ballistic-glass visor, allowing for the UPP Engineers to safely weld, but by some reports hindering sight in the process."
@@ -1121,9 +1141,15 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	armor_bomb = CLOTHING_ARMOR_HIGH
 	var/protection_on = TRUE
 
+/obj/item/clothing/head/helmet/marine/veteran/UPP/medic
+	name = "\improper UM4 medic helmet"
+	desc = "A standard-issue UM4 helmet, with a white stripe on it to signify the wearer's role as a medic."
+	icon_state = "upp_helmet_medic"
+	var/protection_on = TRUE
+
 /obj/item/clothing/head/helmet/marine/veteran/UPP/heavy
 	name = "\improper UH7 helmet"
-	desc = "Like the UM4, this helmet is very resistant to ballistic damage, but both its flaws and benefits have been doubled. The few UPP Zhergeants that have lived past age 30 have all needed to retire from terminal neck problems caused from the stress of wearing this helmet."
+	desc = "The UH7 is the heavy version of the UM4 standard-issue helmet. Its protectiveness is enhanced, and it has an attached visor that provides protection to the user's face."
 	icon_state = "upp_helmet_heavy"
 	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bullet = CLOTHING_ARMOR_HIGHPLUS

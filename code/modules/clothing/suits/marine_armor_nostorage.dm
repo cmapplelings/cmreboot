@@ -945,9 +945,28 @@
 //===========================//UPP\\================================\\
 //=====================================================================\\
 
+/obj/item/clothing/suit/marine/faction
+	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
+	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_ARMS|BODY_FLAG_LEGS
+	flags_cold_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_ARMS|BODY_FLAG_LEGS
+	flags_heat_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_ARMS|BODY_FLAG_LEGS
+	min_cold_protection_temperature = HELMET_MIN_COLD_PROT
+	max_heat_protection_temperature = HELMET_MAX_HEAT_PROT
+	blood_overlay_type = "armor"
+	armor_melee = CLOTHING_ARMOR_MEDIUM
+	armor_bullet = CLOTHING_ARMOR_MEDIUM
+	armor_laser = CLOTHING_ARMOR_MEDIUMLOW
+	armor_energy = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
+	armor_bio = CLOTHING_ARMOR_MEDIUM
+	armor_rad = CLOTHING_ARMOR_MEDIUM
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
+	slowdown = SLOWDOWN_ARMOR_LIGHT
+	movement_compensation = SLOWDOWN_ARMOR_LIGHT
+
 /obj/item/clothing/suit/marine/faction/UPP
 	name = "\improper UM5 personal armor"
-	desc = "Standard body armor of the UPP military, the UM5 (Union Medium MK5) is a medium body armor, roughly on par with the M3 pattern body armor in service with the USCM, specialized towards ballistics protection. Unlike the M3, however, the plate has a heavier neckplate. This has earned many UA members to refer to UPP soldiers as 'tin men'."
+	desc = "Standard body armor of the UPP military, the UM5 (Union Medium MK5) is a medium body armor, roughly on par with the M3 pattern body armor in service with the USCM, specialized towards ballistics protection. "
 	icon_state = "upp_armor"
 	armor_bullet = CLOTHING_ARMOR_HIGH
 	armor_energy = CLOTHING_ARMOR_MEDIUM
@@ -958,7 +977,7 @@
 
 /obj/item/clothing/suit/marine/faction/UPP/support
 	name = "\improper UL6 personal armor"
-	desc = "Standard body armor of the UPP military, the UL6 (Union Light MK6) is a light body armor, slightly weaker than the M3 pattern body armor in service with the USCM, specialized towards ballistics protection. This set of personal armor lacks the iconic neck piece and some of the armor in favor of user mobility."
+	desc = "This is a light variation of the UM5 personal armor, commonly issued to support troops. It offers less protection in favor of increased mobility."
 	icon_state = "upp_armor_support"
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	armor_melee = CLOTHING_ARMOR_HIGH
@@ -966,6 +985,17 @@
 	armor_bio = CLOTHING_ARMOR_MEDIUMLOW
 	armor_rad = CLOTHING_ARMOR_MEDIUMLOW
 	armor_internaldamage = CLOTHING_ARMOR_HIGH
+
+/obj/item/clothing/suit/marine/faction/UPP/nbc
+	name = "\improper UPP NBC suit"
+	desc = "A UPP protective suit specifically designed to protect against biohazards, viral infections and other harmful ambient conditions. It does not provide much protection against blunt, slashing or ballistics damage."
+	icon_state = "upp_nbc"
+	slowdown = SLOWDOWN_ARMOR_LIGHT
+	armor_melee = CLOTHING_ARMOR_LOW
+	armor_energy = CLOTHING_ARMOR_MEDIUM
+	armor_bio = CLOTHING_ARMOR_HIGH
+	armor_rad = CLOTHING_ARMOR_HIGHPLUS
+	armor_internaldamage = CLOTHING_ARMOR_LOW
 
 /obj/item/clothing/suit/marine/faction/UPP/commando
 	name = "\improper UM5CU personal armor"
@@ -975,7 +1005,7 @@
 
 /obj/item/clothing/suit/marine/faction/UPP/heavy
 	name = "\improper UH7 heavy plated armor"
-	desc = "An extremely heavy-duty set of body armor in service with the UPP military, the UH7 (Union Heavy MK7) is known for having powerful ballistic protection, alongside a noticeable neck guard, fortified in order to allow the wearer to endure the stresses of the bulky helmet."
+	desc = "An extremely heavy-duty set of body armor in service with the UPP military, the UH7 (Union Heavy MK7) is known for having exceptionally powerful ballistic protection."
 	icon_state = "upp_armor_heavy"
 	slowdown = SLOWDOWN_ARMOR_HEAVY
 	flags_inventory = BLOCKSHARPOBJ|BLOCK_KNOCKDOWN
